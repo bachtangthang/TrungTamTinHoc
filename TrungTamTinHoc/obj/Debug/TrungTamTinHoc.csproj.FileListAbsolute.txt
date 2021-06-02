@@ -1,0 +1,10 @@
+C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\bin\Debug\TrungTamTinHoc.exe.config
+C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\bin\Debug\TrungTamTinHoc.exe
+C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\bin\Debug\TrungTamTinHoc.pdb
+C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\obj\Debug\TrungTamTinHoc.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\obj\Debug\TrungTamTinHoc.fDangNhap.resources
+C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\obj\Debug\TrungTamTinHoc.Properties.Resources.resources
+C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\obj\Debug\TrungTamTinHoc.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\obj\Debug\TrungTamTinHoc.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\obj\Debug\TrungTamTinHoc.exe
+C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\obj\Debug\TrungTamTinHoc.pdb

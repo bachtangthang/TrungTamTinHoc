@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace TrungTamTinHoc
 {
-    public partial class Form1 : Form
+    public partial class fDangNhap : Form
     {
-        public Form1()
+        public fDangNhap()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_MatKhau_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
