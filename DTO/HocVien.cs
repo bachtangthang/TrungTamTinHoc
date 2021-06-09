@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class HocVien
+    public class HocVien
     {
         private int id;
         private string hoten;

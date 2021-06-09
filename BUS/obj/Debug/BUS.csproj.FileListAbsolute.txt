@@ -1,0 +1,3 @@
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\obj\Debug\BUS.Properties.Resources.resources
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\obj\Debug\BUS.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache

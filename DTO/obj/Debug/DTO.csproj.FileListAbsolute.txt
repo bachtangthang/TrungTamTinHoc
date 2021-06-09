@@ -1,0 +1,4 @@
+C:\Users\DELL\Desktop\TrungTamTinHoc\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\TrungTamTinHoc\DTO\obj\Debug\DTO.Properties.Resources.resources
+C:\Users\DELL\Desktop\TrungTamTinHoc\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\TrungTamTinHoc\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
