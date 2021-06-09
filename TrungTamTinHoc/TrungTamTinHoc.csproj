@@ -52,6 +52,18 @@
     <Compile Include="fDangNhap.Designer.cs">
       <DependentUpon>fDangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="fGiaoVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fGiaoVu.Designer.cs">
+      <DependentUpon>fGiaoVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fNhanViencs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNhanViencs.Designer.cs">
+      <DependentUpon>fNhanViencs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fDangNhap.resx">
