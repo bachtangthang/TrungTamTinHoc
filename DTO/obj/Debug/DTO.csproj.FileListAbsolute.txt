@@ -2,3 +2,8 @@ C:\Users\DELL\Desktop\TrungTamTinHoc\DTO\obj\Debug\DTO.csprojAssemblyReference.c
 C:\Users\DELL\Desktop\TrungTamTinHoc\DTO\obj\Debug\DTO.Properties.Resources.resources
 C:\Users\DELL\Desktop\TrungTamTinHoc\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
 C:\Users\DELL\Desktop\TrungTamTinHoc\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\TrungTamTinHoc\DTO\bin\Debug\DTO.exe.config
+C:\Users\DELL\Desktop\TrungTamTinHoc\DTO\bin\Debug\DTO.exe
+C:\Users\DELL\Desktop\TrungTamTinHoc\DTO\bin\Debug\DTO.pdb
+C:\Users\DELL\Desktop\TrungTamTinHoc\DTO\obj\Debug\DTO.exe
+C:\Users\DELL\Desktop\TrungTamTinHoc\DTO\obj\Debug\DTO.pdb

@@ -8,3 +8,8 @@ C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\obj\Debug\TrungTamTinHoc.csp
 C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\obj\Debug\TrungTamTinHoc.csproj.CoreCompileInputs.cache
 C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\obj\Debug\TrungTamTinHoc.exe
 C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\obj\Debug\TrungTamTinHoc.pdb
+C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\obj\Debug\TrungTamTinHoc.fNhanViencs.resources
+C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\bin\Debug\BUS.exe
+C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\bin\Debug\BUS.pdb
+C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\bin\Debug\BUS.exe.config
+C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\obj\Debug\TrungTamTinHoc.csproj.CopyComplete

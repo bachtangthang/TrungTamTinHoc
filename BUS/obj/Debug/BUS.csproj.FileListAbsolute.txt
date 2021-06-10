@@ -1,3 +1,16 @@
 C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\obj\Debug\BUS.Properties.Resources.resources
 C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\obj\Debug\BUS.csproj.GenerateResource.cache
 C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\bin\Debug\BUS.exe.config
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\bin\Debug\BUS.exe
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\bin\Debug\BUS.pdb
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\bin\Debug\DAO.exe
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\bin\Debug\DTO.exe
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\bin\Debug\DAO.pdb
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\bin\Debug\DAO.exe.config
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\bin\Debug\DTO.pdb
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\bin\Debug\DTO.exe.config
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\obj\Debug\BUS.exe
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\obj\Debug\BUS.pdb

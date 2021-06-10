@@ -19,12 +19,15 @@ namespace TrungTamTinHoc
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            fNhanViencs f = new fNhanViencs();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
         private void tb_MatKhau_TextChanged(object sender, EventArgs e)
