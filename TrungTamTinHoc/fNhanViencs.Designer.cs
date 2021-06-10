@@ -57,6 +57,10 @@ namespace TrungTamTinHoc
             this.cb_gioitinh = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -65,7 +69,10 @@ namespace TrungTamTinHoc
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -246,10 +253,11 @@ namespace TrungTamTinHoc
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.panel8);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(879, 581);
+            this.tabPage2.Size = new System.Drawing.Size(901, 581);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Đăng ký học phần";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -321,6 +329,41 @@ namespace TrungTamTinHoc
             this.panel7.Size = new System.Drawing.Size(204, 412);
             this.panel7.TabIndex = 7;
             // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.panel9);
+            this.panel8.Location = new System.Drawing.Point(6, 6);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(889, 569);
+            this.panel8.TabIndex = 0;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.textBox1);
+            this.panel9.Controls.Add(this.label6);
+            this.panel9.Location = new System.Drawing.Point(3, 3);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(646, 76);
+            this.panel9.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(218, 18);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(327, 36);
+            this.textBox1.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(30, 18);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 33);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "ID:";
+            // 
             // fNhanViencs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -342,7 +385,11 @@ namespace TrungTamTinHoc
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -375,5 +422,9 @@ namespace TrungTamTinHoc
         private System.Windows.Forms.ComboBox cb_gioitinh;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label6;
     }
 }
