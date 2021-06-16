@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DAO
 {
-    class HocVienDAO
+    public class HocVienDAO
     {
         private static HocVienDAO instance; 
 
@@ -17,6 +18,13 @@ namespace DAO
         public List<DTO.HocVien> Xem()
         {
             List<DTO.HocVien> hocvien = new List<DTO.HocVien>() ;
+            string query = "select * from HOCVIEN";
+            DataTable data = DataProvider.Instance.ExecuxeQuery(query);
+
+            foreach (DataRow item in data.Rows)
+            {
+
+            }    
             return hocvien;
         }
     }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAO;
 
 namespace BUS
 {
@@ -16,7 +17,7 @@ namespace BUS
         private HocVienBUS() { }
         public void Xem(DataGridView data)
         {
-
+            data.DataSource = HocVienDAO.Instance.Xem();
         }
     }
 }
