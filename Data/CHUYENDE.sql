@@ -1,0 +1,10 @@
+insert into CHUYENDE (ID_ChuyenDe, TenChuyenDe, GiaTien) values (1, 'Kevon MacKean', 1948000);
+insert into CHUYENDE (ID_ChuyenDe, TenChuyenDe, GiaTien) values (2, 'Mallissa Housam', 1824000);
+insert into CHUYENDE (ID_ChuyenDe, TenChuyenDe, GiaTien) values (3, 'Zeke Martinat', 1486000.0);
+insert into CHUYENDE (ID_ChuyenDe, TenChuyenDe, GiaTien) values (4, 'Gauthier Mcwhinney', 1851000);
+insert into CHUYENDE (ID_ChuyenDe, TenChuyenDe, GiaTien) values (5, 'Rafaelita Gawler', 1039000);
+insert into CHUYENDE (ID_ChuyenDe, TenChuyenDe, GiaTien) values (6, 'Amerigo Pickston', 1661000);
+insert into CHUYENDE (ID_ChuyenDe, TenChuyenDe, GiaTien) values (7, 'Pavel Delhanty', 1088000);
+insert into CHUYENDE (ID_ChuyenDe, TenChuyenDe, GiaTien) values (8, 'Chris Dinsell', 1041000);
+insert into CHUYENDE (ID_ChuyenDe, TenChuyenDe, GiaTien) values (9, 'Moe Radnage', 1144000);
+insert into CHUYENDE (ID_ChuyenDe, TenChuyenDe, GiaTien) values (10, 'Tait Hainning', 1556000);
