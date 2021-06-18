@@ -13,3 +13,10 @@ C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\bin\Debug\BUS.exe
 C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\bin\Debug\BUS.pdb
 C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\bin\Debug\BUS.exe.config
 C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\obj\Debug\TrungTamTinHoc.csproj.CopyComplete
+C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\bin\Debug\DTO.exe
+C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\bin\Debug\DAO.exe
+C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\bin\Debug\DTO.pdb
+C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\bin\Debug\DTO.exe.config
+C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\bin\Debug\DAO.pdb
+C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\bin\Debug\DAO.exe.config
+C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\obj\Debug\TrungTamTinHoc.fGiaoVu.resources

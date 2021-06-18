@@ -21,9 +21,10 @@ namespace TrungTamTinHoc
         {
             int val = BUS.HocVienBUS.Instance.Check_ID(int.Parse(tb_ID.Text));
             //int val = int.Parse(TextBox1.Text);
-            if (val == 0)
-                MessageBox.Show("ID Học Vien Thỏa Mãn", "Thông báo");
-            else if (val >= 1)
+            int i = Convert.ToInt32(val);
+            if (i == 0)
+                MessageBox.Show("ID Học Viên Thỏa Mãn", "Thông báo");
+            else if (i >= 1)
                 MessageBox.Show("ID Học Viên đã tồn tại", "Thông báo");
         }
 

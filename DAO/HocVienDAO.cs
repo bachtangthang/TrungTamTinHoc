@@ -31,13 +31,13 @@ namespace DAO
 
         public int check_ID(int id)
         {
-            string query = "select count * from HOCVIEN where HOCVIEN.ID = "+id+"  ";
-            return DataProvider.Instance.ExecuteNonQuery(query);
+            string query = "select * from HOCVIEN where HOCVIEN.ID = "+id+"  ";
+            return Convert.ToInt32(DataProvider.Instance.ExecuteScalar(query));
         }
 
         public int ThemHV(HocVien hv)
         {
-            string query = "";//quẻy them hocvien
+            string query = "";//query them hocvien
             return DataProvider.Instance.ExecuteNonQuery(query);
         }
     }

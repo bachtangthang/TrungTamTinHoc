@@ -10,6 +10,8 @@ insert into LOPCHUYENDE (ID_LopChuyenDe, TenLop, ID_ChuyenDeMo, ID_GiaoVien, Hoc
 insert into LOPCHUYENDE (ID_LopChuyenDe, TenLop, ID_ChuyenDeMo, ID_GiaoVien, HocKy, NamHoc) values (10, 'Maybelle Attrey', 10, 18, 1, 2020);
 insert into LOPCHUYENDE (ID_LopChuyenDe, TenLop, ID_ChuyenDeMo, ID_GiaoVien, HocKy, NamHoc) values (11, 'Kacy Moxted', 1, 17, 2, 2021);
 insert into LOPCHUYENDE (ID_LopChuyenDe, TenLop, ID_ChuyenDeMo, ID_GiaoVien, HocKy, NamHoc) values (12, 'Hedwiga Stonebridge', 5, 12, 2, 2020);
-insert into LOPCHUYENDE (ID_LopChuyenDe, TenLop, ID_ChuyenDeMo, ID_GiaoVien, HocKy, NamHoc) values (13, 'Brigitta Crole', 13, 4, 1, 2021);
+insert into LOPCHUYENDE (ID_LopChuyenDe, TenLop, ID_ChuyenDeMo, ID_GiaoVien, HocKy, NamHoc) values (13, 'Brigitta Crole', 1, 4, 1, 2021);
 insert into LOPCHUYENDE (ID_LopChuyenDe, TenLop, ID_ChuyenDeMo, ID_GiaoVien, HocKy, NamHoc) values (14, 'Camilla Wayland', 4, 15, 2, 2020);
 insert into LOPCHUYENDE (ID_LopChuyenDe, TenLop, ID_ChuyenDeMo, ID_GiaoVien, HocKy, NamHoc) values (15, 'Gabi Hischke', 3, 19, 2, 2020);
+
+
