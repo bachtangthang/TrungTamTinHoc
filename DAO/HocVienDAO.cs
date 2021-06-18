@@ -27,5 +27,11 @@ namespace DAO
             }    
             return hocvien;
         }
+
+        public int check_ID(int id)
+        {
+            string query = "select count * from HOCVIEN where HOCVIEN.ID = "+id+"  ";
+            return DataProvider.Instance.ExecuteNonQuery(query);
+        }
     }
 }

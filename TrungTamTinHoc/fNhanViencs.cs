@@ -16,5 +16,15 @@ namespace TrungTamTinHoc
         {
             InitializeComponent();
         }
+
+        private void bt_kiemtraID_Click(object sender, EventArgs e)
+        {
+            int val = BUS.HocVienBUS.Instance.Check_ID(int.Parse(tb_ID.Text));
+            //int val = int.Parse(TextBox1.Text);
+            if (val == 0)
+                MessageBox.Show("ID Học Vien Thỏa Mãn", "Thông báo");
+            else if (val >= 1)
+                MessageBox.Show("ID Học Viên đã tồn tại", "Thông báo");
+        }
     }
 }

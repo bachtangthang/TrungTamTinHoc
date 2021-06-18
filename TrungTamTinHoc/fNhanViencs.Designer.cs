@@ -106,6 +106,8 @@ namespace TrungTamTinHoc
             this.panel19 = new System.Windows.Forms.Panel();
             this.id_lopthilai = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.dtgv_HocVien = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -142,6 +144,8 @@ namespace TrungTamTinHoc
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_dkthilai)).BeginInit();
             this.panel20.SuspendLayout();
             this.panel19.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_HocVien)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -159,6 +163,7 @@ namespace TrungTamTinHoc
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.flowLayoutPanel1);
             this.tabPage1.Controls.Add(this.panel7);
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
@@ -187,6 +192,7 @@ namespace TrungTamTinHoc
             this.bt_kiemtraID.TabIndex = 5;
             this.bt_kiemtraID.Text = "Kiểm tra ID";
             this.bt_kiemtraID.UseVisualStyleBackColor = true;
+            this.bt_kiemtraID.Click += new System.EventHandler(this.bt_kiemtraID_Click);
             // 
             // button1
             // 
@@ -880,6 +886,24 @@ namespace TrungTamTinHoc
             this.label13.TabIndex = 3;
             this.label13.Text = "ID lớp:";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.dtgv_HocVien);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(9, 427);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(649, 148);
+            this.flowLayoutPanel1.TabIndex = 3;
+            // 
+            // dtgv_HocVien
+            // 
+            this.dtgv_HocVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv_HocVien.Location = new System.Drawing.Point(3, 3);
+            this.dtgv_HocVien.Name = "dtgv_HocVien";
+            this.dtgv_HocVien.RowHeadersWidth = 51;
+            this.dtgv_HocVien.RowTemplate.Height = 24;
+            this.dtgv_HocVien.Size = new System.Drawing.Size(643, 150);
+            this.dtgv_HocVien.TabIndex = 1;
+            // 
             // fNhanViencs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -939,6 +963,8 @@ namespace TrungTamTinHoc
             this.panel20.PerformLayout();
             this.panel19.ResumeLayout(false);
             this.panel19.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_HocVien)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1021,5 +1047,7 @@ namespace TrungTamTinHoc
         private System.Windows.Forms.Button bt_dangkythilai;
         private System.Windows.Forms.Panel panel25;
         private System.Windows.Forms.DataGridView dtgv_dkthilai;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.DataGridView dtgv_HocVien;
     }
 }
