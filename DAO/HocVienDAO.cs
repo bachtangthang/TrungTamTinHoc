@@ -37,7 +37,7 @@ namespace DAO
 
         public int ThemHV(HocVien hv)
         {
-            string query = "";//query them hocvien
+            string query = "insert into HOCVIEN (ID, HoTen, SDT, GioiTinh, NgaySinh) values ("+hv.Id+", '"+hv.Hoten+"', '"+hv.Sdt+"', '"+hv.Sex+"', '"+hv.Ngaysinh+"');";//query them hocvien
             return DataProvider.Instance.ExecuteNonQuery(query);
         }
     }

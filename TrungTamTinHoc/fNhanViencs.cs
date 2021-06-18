@@ -35,6 +35,7 @@ namespace TrungTamTinHoc
             string sdt = tb_sdt.Text;
             string sex = cb_gioitinh.Text;
             DateTime dob = dt_ngaysinh.Value;
+            BUS.HocVienBUS.Instance.DangKyHV(id, name, sdt, sex, dob);
         }
     }
 }
