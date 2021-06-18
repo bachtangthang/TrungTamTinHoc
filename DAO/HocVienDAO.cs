@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DTO;
 
 namespace DAO
 {
@@ -31,6 +32,12 @@ namespace DAO
         public int check_ID(int id)
         {
             string query = "select count * from HOCVIEN where HOCVIEN.ID = "+id+"  ";
+            return DataProvider.Instance.ExecuteNonQuery(query);
+        }
+
+        public int ThemHV(HocVien hv)
+        {
+            string query = "";//quẻy them hocvien
             return DataProvider.Instance.ExecuteNonQuery(query);
         }
     }

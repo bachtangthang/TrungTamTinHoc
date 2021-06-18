@@ -31,9 +31,11 @@ namespace TrungTamTinHoc
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.dtgv_HocVien = new System.Windows.Forms.DataGridView();
             this.panel7 = new System.Windows.Forms.Panel();
             this.bt_kiemtraID = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_DangKyHV = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.cb_gioitinh = new System.Windows.Forms.ComboBox();
@@ -106,10 +108,10 @@ namespace TrungTamTinHoc
             this.panel19 = new System.Windows.Forms.Panel();
             this.id_lopthilai = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.dtgv_HocVien = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_HocVien)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -144,8 +146,6 @@ namespace TrungTamTinHoc
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_dkthilai)).BeginInit();
             this.panel20.SuspendLayout();
             this.panel19.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgv_HocVien)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -174,10 +174,28 @@ namespace TrungTamTinHoc
             this.tabPage1.Text = "Đăng ký học viên";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.dtgv_HocVien);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(9, 427);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(649, 148);
+            this.flowLayoutPanel1.TabIndex = 3;
+            // 
+            // dtgv_HocVien
+            // 
+            this.dtgv_HocVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv_HocVien.Location = new System.Drawing.Point(3, 3);
+            this.dtgv_HocVien.Name = "dtgv_HocVien";
+            this.dtgv_HocVien.RowHeadersWidth = 51;
+            this.dtgv_HocVien.RowTemplate.Height = 24;
+            this.dtgv_HocVien.Size = new System.Drawing.Size(643, 150);
+            this.dtgv_HocVien.TabIndex = 1;
+            // 
             // panel7
             // 
             this.panel7.Controls.Add(this.bt_kiemtraID);
-            this.panel7.Controls.Add(this.button1);
+            this.panel7.Controls.Add(this.btn_DangKyHV);
             this.panel7.Location = new System.Drawing.Point(673, 9);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(204, 412);
@@ -194,15 +212,16 @@ namespace TrungTamTinHoc
             this.bt_kiemtraID.UseVisualStyleBackColor = true;
             this.bt_kiemtraID.Click += new System.EventHandler(this.bt_kiemtraID_Click);
             // 
-            // button1
+            // btn_DangKyHV
             // 
-            this.button1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 219);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(176, 74);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Đăng ký";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_DangKyHV.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DangKyHV.Location = new System.Drawing.Point(12, 219);
+            this.btn_DangKyHV.Name = "btn_DangKyHV";
+            this.btn_DangKyHV.Size = new System.Drawing.Size(176, 74);
+            this.btn_DangKyHV.TabIndex = 6;
+            this.btn_DangKyHV.Text = "Đăng ký";
+            this.btn_DangKyHV.UseVisualStyleBackColor = true;
+            this.btn_DangKyHV.Click += new System.EventHandler(this.btn_DangKyHV_Click);
             // 
             // panel1
             // 
@@ -886,24 +905,6 @@ namespace TrungTamTinHoc
             this.label13.TabIndex = 3;
             this.label13.Text = "ID lớp:";
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.dtgv_HocVien);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(9, 427);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(649, 148);
-            this.flowLayoutPanel1.TabIndex = 3;
-            // 
-            // dtgv_HocVien
-            // 
-            this.dtgv_HocVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgv_HocVien.Location = new System.Drawing.Point(3, 3);
-            this.dtgv_HocVien.Name = "dtgv_HocVien";
-            this.dtgv_HocVien.RowHeadersWidth = 51;
-            this.dtgv_HocVien.RowTemplate.Height = 24;
-            this.dtgv_HocVien.Size = new System.Drawing.Size(643, 150);
-            this.dtgv_HocVien.TabIndex = 1;
-            // 
             // fNhanViencs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -914,6 +915,8 @@ namespace TrungTamTinHoc
             this.Text = "Phần mềm quản lý học viên";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_HocVien)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
@@ -963,8 +966,6 @@ namespace TrungTamTinHoc
             this.panel20.PerformLayout();
             this.panel19.ResumeLayout(false);
             this.panel19.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgv_HocVien)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -979,7 +980,6 @@ namespace TrungTamTinHoc
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tb_ID;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel5;
@@ -994,7 +994,7 @@ namespace TrungTamTinHoc
         private System.Windows.Forms.Button bt_kiemtraID;
         private System.Windows.Forms.ComboBox cb_gioitinh;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_DangKyHV;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.TextBox tb_Idlop;
@@ -1049,5 +1049,6 @@ namespace TrungTamTinHoc
         private System.Windows.Forms.DataGridView dtgv_dkthilai;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.DataGridView dtgv_HocVien;
+        private System.Windows.Forms.TextBox tb_ID;
     }
 }
