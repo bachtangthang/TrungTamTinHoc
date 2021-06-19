@@ -14,6 +14,8 @@ namespace DTO
         private int id_GiaoVien;
         private int hocKy;
         private int nam;
+        private int soluong;
+        private int soluongtoida;
 
         public int Id_LopChuyenDe { get => id_LopChuyenDe; set => id_LopChuyenDe = value; }
         public string TenLop { get => tenLop; set => tenLop = value; }
@@ -21,8 +23,10 @@ namespace DTO
         public int Id_GiaoVien { get => id_GiaoVien; set => id_GiaoVien = value; }
         public int HocKy { get => hocKy; set => hocKy = value; }
         public int Nam { get => nam; set => nam = value; }
+        public int Soluong { get => soluong; set => soluong = value; }
+        public int Soluongtoida { get => soluongtoida; set => soluongtoida = value; }
 
-        public LopChuyenDe(int id_lop, string ten, int id_cd, int id_gv, int hocky, int nam)
+        public LopChuyenDe(int id_lop, string ten, int id_cd, int id_gv, int hocky, int nam, int soluong, int soluongtoida)
         {
             this.id_LopChuyenDe = id_lop;
             this.tenLop = ten;
@@ -30,6 +34,8 @@ namespace DTO
             this.id_GiaoVien = id_gv;
             this.hocKy = hocky;
             this.nam = nam;
+            this.soluong = soluong;
+            this.soluongtoida = soluongtoida;
         }
     }
 }
