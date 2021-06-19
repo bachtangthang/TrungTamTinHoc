@@ -37,5 +37,20 @@ namespace TrungTamTinHoc
             DateTime dob = dt_ngaysinh.Value;
             BUS.HocVienBUS.Instance.DangKyHV(id, name, sdt, sex, dob);
         }
+
+        private void btn_timkiemLop_Click(object sender, EventArgs e)
+        {
+            int hocky = int.Parse(tb_hocky.Text);
+            int nam = int.Parse(tb_namhoc.Text);
+            string tenlop = tb_tenMH.Text;
+            if(cb_LoaiLop.Text == "Học phần")
+            {
+                BUS.LopChuyenDeBUS.Instance.
+            }   
+            else if (cb_LoaiLop.Text == "Chuyên đề")
+            {
+
+            }    
+        }
     }
 }

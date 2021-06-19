@@ -246,10 +246,11 @@ namespace TrungTamTinHoc
             // 
             // cb_gioitinh
             // 
+            this.cb_gioitinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_gioitinh.FormattingEnabled = true;
             this.cb_gioitinh.Location = new System.Drawing.Point(218, 18);
             this.cb_gioitinh.Name = "cb_gioitinh";
-            this.cb_gioitinh.Size = new System.Drawing.Size(327, 24);
+            this.cb_gioitinh.Size = new System.Drawing.Size(327, 37);
             this.cb_gioitinh.TabIndex = 6;
             // 
             // label5
@@ -273,10 +274,12 @@ namespace TrungTamTinHoc
             // 
             // dt_ngaysinh
             // 
+            this.dt_ngaysinh.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dt_ngaysinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dt_ngaysinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dt_ngaysinh.Location = new System.Drawing.Point(218, 25);
             this.dt_ngaysinh.Name = "dt_ngaysinh";
-            this.dt_ngaysinh.Size = new System.Drawing.Size(327, 22);
+            this.dt_ngaysinh.Size = new System.Drawing.Size(327, 34);
             this.dt_ngaysinh.TabIndex = 4;
             // 
             // label4
@@ -300,6 +303,7 @@ namespace TrungTamTinHoc
             // 
             // tb_sdt
             // 
+            this.tb_sdt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_sdt.Location = new System.Drawing.Point(218, 27);
             this.tb_sdt.Multiline = true;
             this.tb_sdt.Name = "tb_sdt";
@@ -327,6 +331,7 @@ namespace TrungTamTinHoc
             // 
             // tb_name
             // 
+            this.tb_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_name.Location = new System.Drawing.Point(218, 18);
             this.tb_name.Multiline = true;
             this.tb_name.Name = "tb_name";
@@ -354,6 +359,7 @@ namespace TrungTamTinHoc
             // 
             // tb_ID
             // 
+            this.tb_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_ID.Location = new System.Drawing.Point(218, 18);
             this.tb_ID.Multiline = true;
             this.tb_ID.Name = "tb_ID";
@@ -416,6 +422,7 @@ namespace TrungTamTinHoc
             // 
             // tb_namhoc
             // 
+            this.tb_namhoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_namhoc.Location = new System.Drawing.Point(238, 18);
             this.tb_namhoc.Multiline = true;
             this.tb_namhoc.Name = "tb_namhoc";
@@ -443,6 +450,7 @@ namespace TrungTamTinHoc
             // 
             // tb_hocky
             // 
+            this.tb_hocky.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_hocky.Location = new System.Drawing.Point(238, 18);
             this.tb_hocky.Multiline = true;
             this.tb_hocky.Name = "tb_hocky";
@@ -486,6 +494,7 @@ namespace TrungTamTinHoc
             this.btn_timkiemLop.TabIndex = 12;
             this.btn_timkiemLop.Text = "Tìm kiếm";
             this.btn_timkiemLop.UseVisualStyleBackColor = true;
+            this.btn_timkiemLop.Click += new System.EventHandler(this.btn_timkiemLop_Click);
             // 
             // panel13
             // 
@@ -498,6 +507,7 @@ namespace TrungTamTinHoc
             // 
             // tb_tenMH
             // 
+            this.tb_tenMH.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_tenMH.Location = new System.Drawing.Point(238, 18);
             this.tb_tenMH.Multiline = true;
             this.tb_tenMH.Name = "tb_tenMH";
@@ -547,6 +557,7 @@ namespace TrungTamTinHoc
             // 
             // tb_IDHV
             // 
+            this.tb_IDHV.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_IDHV.Location = new System.Drawing.Point(218, 18);
             this.tb_IDHV.Multiline = true;
             this.tb_IDHV.Name = "tb_IDHV";
@@ -632,6 +643,7 @@ namespace TrungTamTinHoc
             // 
             // tb_Idlop
             // 
+            this.tb_Idlop.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Idlop.Location = new System.Drawing.Point(218, 18);
             this.tb_Idlop.Multiline = true;
             this.tb_Idlop.Name = "tb_Idlop";
@@ -681,6 +693,7 @@ namespace TrungTamTinHoc
             // 
             // tb_idhv_dkcd
             // 
+            this.tb_idhv_dkcd.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_idhv_dkcd.Location = new System.Drawing.Point(218, 18);
             this.tb_idhv_dkcd.Multiline = true;
             this.tb_idhv_dkcd.Name = "tb_idhv_dkcd";
@@ -766,6 +779,7 @@ namespace TrungTamTinHoc
             // 
             // tb_idlop_dkcd
             // 
+            this.tb_idlop_dkcd.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_idlop_dkcd.Location = new System.Drawing.Point(218, 18);
             this.tb_idlop_dkcd.Multiline = true;
             this.tb_idlop_dkcd.Name = "tb_idlop_dkcd";
@@ -854,6 +868,7 @@ namespace TrungTamTinHoc
             // 
             // id_hvthilai
             // 
+            this.id_hvthilai.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_hvthilai.Location = new System.Drawing.Point(218, 18);
             this.id_hvthilai.Multiline = true;
             this.id_hvthilai.Name = "id_hvthilai";
@@ -881,6 +896,7 @@ namespace TrungTamTinHoc
             // 
             // id_lopthilai
             // 
+            this.id_lopthilai.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_lopthilai.Location = new System.Drawing.Point(218, 18);
             this.id_lopthilai.Multiline = true;
             this.id_lopthilai.Name = "id_lopthilai";
@@ -899,10 +915,14 @@ namespace TrungTamTinHoc
             // 
             // cb_LoaiLop
             // 
+            this.cb_LoaiLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_LoaiLop.FormattingEnabled = true;
-            this.cb_LoaiLop.Location = new System.Drawing.Point(92, 27);
+            this.cb_LoaiLop.Items.AddRange(new object[] {
+            "Chuyên đề",
+            "Học phần"});
+            this.cb_LoaiLop.Location = new System.Drawing.Point(84, 18);
             this.cb_LoaiLop.Name = "cb_LoaiLop";
-            this.cb_LoaiLop.Size = new System.Drawing.Size(123, 24);
+            this.cb_LoaiLop.Size = new System.Drawing.Size(123, 28);
             this.cb_LoaiLop.TabIndex = 4;
             // 
             // fNhanViencs
