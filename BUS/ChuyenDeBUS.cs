@@ -21,5 +21,10 @@ namespace BUS
         {
             //data.DataSource = ChuyenDeDAO.Instance.
         }
+
+        public int findID_by_Name(string tenlop)
+        {
+            return DAO.ChuyenDeDAO.Instance.FindID_By_Name(tenlop);
+        }
     }
 }

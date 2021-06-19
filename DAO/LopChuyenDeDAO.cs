@@ -19,7 +19,7 @@ namespace DAO
 
         private LopChuyenDeDAO() { }
 
-        public List<LopChuyenDe> Xem_Theo_Lop()
+        public List<LopChuyenDe> Xem_Theo_Lop()//not done
         {
             List<LopChuyenDe> lop = new List<LopChuyenDe>();
             string query1 = "select * from LOPCHUYENDE where ";
@@ -31,6 +31,12 @@ namespace DAO
 
             }    
             return lop;
+        }
+
+        public DataTable timLop(int id_cd, int hocky, int nam)
+        {
+            string query = "select * from LOPCHUYENDE where LOPCHUYENDE.ID_ChuyenDeMo = " + id_cd + " and HocKy = " + hocky + " and NamHoc = " + nam + "";
+            return DataProvider.Instance.ExecuxeQuery(query);
         }
     }
 }

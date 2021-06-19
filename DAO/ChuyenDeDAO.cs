@@ -16,7 +16,7 @@ namespace DAO
 
         private ChuyenDeDAO() { }
 
-        public List<ChuyenDe> Xem()
+        public List<ChuyenDe> Xem()//not done
         {
             List<ChuyenDe> cd = new List<ChuyenDe>();
             string query = "select * from CHUYENDE";
@@ -27,6 +27,12 @@ namespace DAO
 
             }
             return cd;
+        }
+
+        public int FindID_By_Name(string ten)
+        {
+            string query = "select ID_ChuyenDe from CHUYENDE where CHUYENDE.TenChuyenDe like '%"+ten+"%'";
+            return Convert.ToInt32(DataProvider.Instance.ExecuteScalar(query));
         }
     }
 }

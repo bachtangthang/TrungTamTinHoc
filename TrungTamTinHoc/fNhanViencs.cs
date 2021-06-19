@@ -45,12 +45,13 @@ namespace TrungTamTinHoc
             string tenlop = tb_tenMH.Text;
             if(cb_LoaiLop.Text == "Học phần")
             {
-                BUS.LopChuyenDeBUS.Instance.
+
             }   
             else if (cb_LoaiLop.Text == "Chuyên đề")
             {
-
-            }    
+                int id_cd = BUS.ChuyenDeBUS.Instance.findID_by_Name(tenlop);
+                dtgv_lophoc.DataSource = BUS.LopChuyenDeBUS.Instance.timLop(id_cd, hocky, nam);
+            }
         }
     }
 }

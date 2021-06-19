@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,9 +18,9 @@ namespace BUS
 
         private LopChuyenDeBUS() { }
 
-        public void Xem(DataGridView data)
+        public DataTable timLop(int id_cd, int hocky, int nam)
         {
-            //data.DataSource = LopChuyenDeDAO.Instance.
+            return LopChuyenDeDAO.Instance.timLop(id_cd, hocky, nam);
         }
     }
 }
