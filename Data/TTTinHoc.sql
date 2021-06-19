@@ -160,6 +160,8 @@ create table HOCVIEN_DANGKY_LOPCHUYENDE
 	primary key(ID_LopChuyenDe, ID_HocVien)
 )
 
+alter table LOPCHUYENDE	add SoLuong int;
+alter table LOPCHUYENDE add SoLuongToiDa int;
 -----------------------------------------------------------
 -----------------------------------------------------------
 alter table HOADON add constraint FK_HOADON_HOCVIEN foreign key (ID_HocVien) references HOCVIEN(ID)
