@@ -54,7 +54,6 @@ namespace TrungTamTinHoc
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.panel24 = new System.Windows.Forms.Panel();
-            this.tb_loai = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.tb_namhoc = new System.Windows.Forms.TextBox();
@@ -64,7 +63,7 @@ namespace TrungTamTinHoc
             this.label9 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.dtgv_lophoc = new System.Windows.Forms.DataGridView();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_timkiemLop = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
             this.tb_tenMH = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -108,6 +107,7 @@ namespace TrungTamTinHoc
             this.panel19 = new System.Windows.Forms.Panel();
             this.id_lopthilai = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.cb_LoaiLop = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -376,7 +376,7 @@ namespace TrungTamTinHoc
             this.tabPage5.Controls.Add(this.panel16);
             this.tabPage5.Controls.Add(this.panel15);
             this.tabPage5.Controls.Add(this.panel14);
-            this.tabPage5.Controls.Add(this.button4);
+            this.tabPage5.Controls.Add(this.btn_timkiemLop);
             this.tabPage5.Controls.Add(this.panel13);
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Name = "tabPage5";
@@ -388,20 +388,12 @@ namespace TrungTamTinHoc
             // 
             // panel24
             // 
-            this.panel24.Controls.Add(this.tb_loai);
+            this.panel24.Controls.Add(this.cb_LoaiLop);
             this.panel24.Controls.Add(this.label15);
             this.panel24.Location = new System.Drawing.Point(661, 78);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(234, 76);
             this.panel24.TabIndex = 16;
-            // 
-            // tb_loai
-            // 
-            this.tb_loai.Location = new System.Drawing.Point(92, 18);
-            this.tb_loai.Multiline = true;
-            this.tb_loai.Name = "tb_loai";
-            this.tb_loai.Size = new System.Drawing.Size(139, 36);
-            this.tb_loai.TabIndex = 1;
             // 
             // label15
             // 
@@ -485,15 +477,15 @@ namespace TrungTamTinHoc
             this.dtgv_lophoc.Size = new System.Drawing.Size(640, 322);
             this.dtgv_lophoc.TabIndex = 0;
             // 
-            // button4
+            // btn_timkiemLop
             // 
-            this.button4.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(692, 431);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(176, 74);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "Tìm kiếm";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_timkiemLop.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_timkiemLop.Location = new System.Drawing.Point(692, 431);
+            this.btn_timkiemLop.Name = "btn_timkiemLop";
+            this.btn_timkiemLop.Size = new System.Drawing.Size(176, 74);
+            this.btn_timkiemLop.TabIndex = 12;
+            this.btn_timkiemLop.Text = "Tìm kiếm";
+            this.btn_timkiemLop.UseVisualStyleBackColor = true;
             // 
             // panel13
             // 
@@ -905,6 +897,14 @@ namespace TrungTamTinHoc
             this.label13.TabIndex = 3;
             this.label13.Text = "ID lớp:";
             // 
+            // cb_LoaiLop
+            // 
+            this.cb_LoaiLop.FormattingEnabled = true;
+            this.cb_LoaiLop.Location = new System.Drawing.Point(92, 27);
+            this.cb_LoaiLop.Name = "cb_LoaiLop";
+            this.cb_LoaiLop.Size = new System.Drawing.Size(123, 24);
+            this.cb_LoaiLop.TabIndex = 4;
+            // 
             // fNhanViencs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1009,7 +1009,7 @@ namespace TrungTamTinHoc
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button bt_TimKiem;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_timkiemLop;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.TextBox tb_tenMH;
         private System.Windows.Forms.Label label8;
@@ -1040,7 +1040,6 @@ namespace TrungTamTinHoc
         private System.Windows.Forms.TextBox tb_idlop_dkcd;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.TextBox tb_loai;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel26;
         private System.Windows.Forms.Button bt_loadlichthi;
@@ -1050,5 +1049,6 @@ namespace TrungTamTinHoc
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.DataGridView dtgv_HocVien;
         private System.Windows.Forms.TextBox tb_ID;
+        private System.Windows.Forms.ComboBox cb_LoaiLop;
     }
 }
