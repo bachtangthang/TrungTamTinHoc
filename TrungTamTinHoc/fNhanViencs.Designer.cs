@@ -771,6 +771,7 @@ namespace TrungTamTinHoc
             this.bt_loadcd.TabIndex = 5;
             this.bt_loadcd.Text = "Load ";
             this.bt_loadcd.UseVisualStyleBackColor = true;
+            this.bt_loadcd.Click += new System.EventHandler(this.bt_loadcd_Click);
             // 
             // bt_dkcd
             // 
@@ -781,6 +782,7 @@ namespace TrungTamTinHoc
             this.bt_dkcd.TabIndex = 6;
             this.bt_dkcd.Text = "Đăng ký";
             this.bt_dkcd.UseVisualStyleBackColor = true;
+            this.bt_dkcd.Click += new System.EventHandler(this.bt_dkcd_Click);
             // 
             // panel23
             // 

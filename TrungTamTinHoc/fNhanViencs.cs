@@ -82,5 +82,33 @@ namespace TrungTamTinHoc
                 MessageBox.Show("Học viên đã đăng ký môn học");
             }
         }
+
+        private void bt_loadcd_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                BUS.HocVien_DK_LopChuyenDeBUS.Instance.LoadLop(dtgv_chuyende, int.Parse(tb_idlop_dkcd.Text));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void bt_dkcd_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int i = BUS.HocVien_DK_LopChuyenDeBUS.Instance.DangKy(int.Parse(tb_idhv_dkcd.Text), int.Parse(tb_idlop_dkcd.Text));
+                if (i == 1)
+                    MessageBox.Show("Đăng ký thành công", "Thông báo");
+                else
+                    MessageBox.Show("Đăng ký không thành công", "Thông báo");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Học viên đã đăng ký môn học");
+            }
+        }
     }
 }
