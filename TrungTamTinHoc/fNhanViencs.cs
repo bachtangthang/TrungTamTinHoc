@@ -54,5 +54,33 @@ namespace TrungTamTinHoc
                 dtgv_lophoc.DataSource = BUS.LopChuyenDeBUS.Instance.timLop(id_cd, hocky, nam);
             }
         }
+
+        private void bt_Load_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                BUS.HocVien_DK_LopHocPhanBUS.Instance.LoadLop(dtgv_Lop, int.Parse(tb_Idlop.Text));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void bt_Dangky_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int i = BUS.HocVien_DK_LopHocPhanBUS.Instance.DangKy(int.Parse(tb_IDHV.Text), int.Parse(tb_Idlop.Text));
+                if (i == 1)
+                    MessageBox.Show("Đăng ký thành công", "Thông báo");
+                else
+                    MessageBox.Show("Đăng ký không thành công", "Thông báo");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Học viên đã đăng ký môn học");
+            }
+        }
     }
 }

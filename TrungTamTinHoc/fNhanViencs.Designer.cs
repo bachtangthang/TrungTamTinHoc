@@ -54,6 +54,7 @@ namespace TrungTamTinHoc
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.panel24 = new System.Windows.Forms.Panel();
+            this.cb_LoaiLop = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.tb_namhoc = new System.Windows.Forms.TextBox();
@@ -107,7 +108,6 @@ namespace TrungTamTinHoc
             this.panel19 = new System.Windows.Forms.Panel();
             this.id_lopthilai = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.cb_LoaiLop = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -401,6 +401,18 @@ namespace TrungTamTinHoc
             this.panel24.Size = new System.Drawing.Size(234, 76);
             this.panel24.TabIndex = 16;
             // 
+            // cb_LoaiLop
+            // 
+            this.cb_LoaiLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_LoaiLop.FormattingEnabled = true;
+            this.cb_LoaiLop.Items.AddRange(new object[] {
+            "Chuyên đề",
+            "Học phần"});
+            this.cb_LoaiLop.Location = new System.Drawing.Point(84, 18);
+            this.cb_LoaiLop.Name = "cb_LoaiLop";
+            this.cb_LoaiLop.Size = new System.Drawing.Size(123, 28);
+            this.cb_LoaiLop.TabIndex = 4;
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -579,7 +591,7 @@ namespace TrungTamTinHoc
             this.panel11.Controls.Add(this.dtgv_Lop);
             this.panel11.Location = new System.Drawing.Point(3, 167);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(646, 366);
+            this.panel11.Size = new System.Drawing.Size(646, 399);
             this.panel11.TabIndex = 9;
             // 
             // dtgv_Lop
@@ -589,7 +601,7 @@ namespace TrungTamTinHoc
             this.dtgv_Lop.Name = "dtgv_Lop";
             this.dtgv_Lop.RowHeadersWidth = 51;
             this.dtgv_Lop.RowTemplate.Height = 24;
-            this.dtgv_Lop.Size = new System.Drawing.Size(628, 360);
+            this.dtgv_Lop.Size = new System.Drawing.Size(628, 393);
             this.dtgv_Lop.TabIndex = 0;
             // 
             // panel10
@@ -621,6 +633,7 @@ namespace TrungTamTinHoc
             this.bt_Load.TabIndex = 5;
             this.bt_Load.Text = "Load ";
             this.bt_Load.UseVisualStyleBackColor = true;
+            this.bt_Load.Click += new System.EventHandler(this.bt_Load_Click);
             // 
             // bt_Dangky
             // 
@@ -631,6 +644,7 @@ namespace TrungTamTinHoc
             this.bt_Dangky.TabIndex = 6;
             this.bt_Dangky.Text = "Đăng ký";
             this.bt_Dangky.UseVisualStyleBackColor = true;
+            this.bt_Dangky.Click += new System.EventHandler(this.bt_Dangky_Click);
             // 
             // panel9
             // 
@@ -912,18 +926,6 @@ namespace TrungTamTinHoc
             this.label13.Size = new System.Drawing.Size(106, 33);
             this.label13.TabIndex = 3;
             this.label13.Text = "ID lớp:";
-            // 
-            // cb_LoaiLop
-            // 
-            this.cb_LoaiLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_LoaiLop.FormattingEnabled = true;
-            this.cb_LoaiLop.Items.AddRange(new object[] {
-            "Chuyên đề",
-            "Học phần"});
-            this.cb_LoaiLop.Location = new System.Drawing.Point(84, 18);
-            this.cb_LoaiLop.Name = "cb_LoaiLop";
-            this.cb_LoaiLop.Size = new System.Drawing.Size(123, 28);
-            this.cb_LoaiLop.TabIndex = 4;
             // 
             // fNhanViencs
             // 

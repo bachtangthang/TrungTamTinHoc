@@ -54,6 +54,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="HocVien.cs" />
+    <Compile Include="HocVien_DK_LopHocPhan.cs" />
     <Compile Include="LopChuyenDe.cs" />
     <Compile Include="LopHocPhan.cs" />
     <Compile Include="MonHoc.cs" />
