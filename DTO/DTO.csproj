@@ -55,6 +55,8 @@
     </Compile>
     <Compile Include="HocVien.cs" />
     <Compile Include="LopChuyenDe.cs" />
+    <Compile Include="LopHocPhan.cs" />
+    <Compile Include="MonHoc.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
