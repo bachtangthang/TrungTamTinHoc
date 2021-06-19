@@ -110,5 +110,15 @@ namespace TrungTamTinHoc
                 MessageBox.Show("Học viên đã đăng ký môn học");
             }
         }
+
+        private void bt_dangkythilai_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_loadlichthi_Click(object sender, EventArgs e)
+        {
+            BUS.LichThiBUS.Instance.Load(dtgv_dkthilai, int.Parse(id_lopthilai.Text));
+        }
     }
 }

@@ -844,6 +844,7 @@ namespace TrungTamTinHoc
             this.bt_loadlichthi.TabIndex = 5;
             this.bt_loadlichthi.Text = "Load";
             this.bt_loadlichthi.UseVisualStyleBackColor = true;
+            this.bt_loadlichthi.Click += new System.EventHandler(this.bt_loadlichthi_Click);
             // 
             // bt_dangkythilai
             // 
@@ -854,6 +855,7 @@ namespace TrungTamTinHoc
             this.bt_dangkythilai.TabIndex = 6;
             this.bt_dangkythilai.Text = "Đăng ký";
             this.bt_dangkythilai.UseVisualStyleBackColor = true;
+            this.bt_dangkythilai.Click += new System.EventHandler(this.bt_dangkythilai_Click);
             // 
             // panel25
             // 
