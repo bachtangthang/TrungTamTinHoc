@@ -56,6 +56,7 @@
     <Compile Include="HocVien.cs" />
     <Compile Include="HocVien_DK_LopChuyenDe.cs" />
     <Compile Include="HocVien_DK_LopHocPhan.cs" />
+    <Compile Include="HocVien_LichThi.cs" />
     <Compile Include="LichThi.cs" />
     <Compile Include="LopChuyenDe.cs" />
     <Compile Include="LopHocPhan.cs" />

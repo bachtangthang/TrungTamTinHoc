@@ -164,7 +164,6 @@ create table HOCVIEN_LICHTHI
 (
 	ID_HocVien int,
 	ID_LichThi int,
-	lanthi int,
 	ngayDK date,
 	diem int,
 	primary key(ID_HocVien, ID_LichThi)

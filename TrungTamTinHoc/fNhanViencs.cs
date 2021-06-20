@@ -113,7 +113,9 @@ namespace TrungTamTinHoc
 
         private void bt_dangkythilai_Click(object sender, EventArgs e)
         {
-
+            DataGridViewRow row = dtgv_dkthilai.SelectedCells[0].OwningRow;
+            int id_tl = Convert.ToInt32(row.Cells["Id"].Value);
+            BUS.HocVien_LichThiBUS.Instance.DangKy(int.Parse(id_hvthilai.Text), id_tl);
         }
 
         private void bt_loadlichthi_Click(object sender, EventArgs e)
