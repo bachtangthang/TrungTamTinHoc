@@ -210,3 +210,6 @@ alter table HOCVIEN_LICHTHI add constraint FK_DK_THI_2 foreign key (ID_HocVien) 
 
 
 
+//SELECT CAST( GETDATE() AS Date ) from HOCVIEN_LICHTHI
+//insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK) values (1,1, GETDATE())-- AS DATE)
+
