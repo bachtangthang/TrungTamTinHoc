@@ -25,10 +25,10 @@ namespace BUS
             return HocVienDAO.Instance.check_ID(id);
         }
 
-        public void DangKyHV(int id, string name, string sdt, string sex, DateTime dob)
+        public int DangKyHV(int id, string name, string sdt, string sex, DateTime dob)
         {
             HocVien hv = new HocVien(id, name, sdt, sex, dob);
-            HocVienDAO.Instance.ThemHV(hv);
+            return HocVienDAO.Instance.ThemHV(hv);
         }
     }
 }

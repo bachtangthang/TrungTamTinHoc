@@ -248,6 +248,9 @@ namespace TrungTamTinHoc
             // 
             this.cb_gioitinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_gioitinh.FormattingEnabled = true;
+            this.cb_gioitinh.Items.AddRange(new object[] {
+            "M",
+            "F"});
             this.cb_gioitinh.Location = new System.Drawing.Point(218, 18);
             this.cb_gioitinh.Name = "cb_gioitinh";
             this.cb_gioitinh.Size = new System.Drawing.Size(327, 37);

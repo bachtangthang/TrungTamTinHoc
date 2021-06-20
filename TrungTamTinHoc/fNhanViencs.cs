@@ -19,23 +19,37 @@ namespace TrungTamTinHoc
 
         private void bt_kiemtraID_Click(object sender, EventArgs e)
         {
-            int val = BUS.HocVienBUS.Instance.Check_ID(int.Parse(tb_ID.Text));
-            //int val = int.Parse(TextBox1.Text);
-            int i = Convert.ToInt32(val);
-            if (i == 0)
-                MessageBox.Show("ID Học Viên Thỏa Mãn", "Thông báo");
-            else if (i >= 1)
-                MessageBox.Show("ID Học Viên đã tồn tại", "Thông báo");
+            try
+            {
+                int val = BUS.HocVienBUS.Instance.Check_ID(int.Parse(tb_ID.Text));
+                //int val = int.Parse(TextBox1.Text);
+                int i = Convert.ToInt32(val);
+                if (i == 0)
+                    MessageBox.Show("ID Học Viên Thỏa Mãn", "Thông báo");
+                else if (i >= 1)
+                    MessageBox.Show("ID Học Viên đã tồn tại", "Thông báo");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btn_DangKyHV_Click(object sender, EventArgs e)
         {
-            int id = int.Parse(tb_ID.Text);
-            string name = tb_name.Text;
-            string sdt = tb_sdt.Text;
-            string sex = cb_gioitinh.Text;
-            DateTime dob = dt_ngaysinh.Value;
-            BUS.HocVienBUS.Instance.DangKyHV(id, name, sdt, sex, dob);
+            try
+            {
+                int id = int.Parse(tb_ID.Text);
+                string name = tb_name.Text;
+                string sdt = tb_sdt.Text;
+                string sex = cb_gioitinh.Text;
+                DateTime dob = dt_ngaysinh.Value;
+                BUS.HocVienBUS.Instance.DangKyHV(id, name, sdt, sex, dob);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btn_timkiemLop_Click(object sender, EventArgs e)
@@ -113,14 +127,35 @@ namespace TrungTamTinHoc
 
         private void bt_dangkythilai_Click(object sender, EventArgs e)
         {
-            DataGridViewRow row = dtgv_dkthilai.SelectedCells[0].OwningRow;
-            int id_tl = Convert.ToInt32(row.Cells["Id"].Value);
-            BUS.HocVien_LichThiBUS.Instance.DangKy(int.Parse(id_hvthilai.Text), id_tl);
+            try
+            {
+                DataGridViewRow row = dtgv_dkthilai.SelectedCells[0].OwningRow;
+                int id_tl = Convert.ToInt32(row.Cells["Id"].Value);
+                if (BUS.HocVien_LichThiBUS.Instance.DangKy(int.Parse(id_hvthilai.Text), id_tl) == 1)
+                {
+                    MessageBox.Show("Thành công               ", "Thông báo");
+                }
+                else
+                {
+                    MessageBox.Show("Học viên đã đăng ký", "Thông báo");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void bt_loadlichthi_Click(object sender, EventArgs e)
         {
-            BUS.LichThiBUS.Instance.Load(dtgv_dkthilai, int.Parse(id_lopthilai.Text));
+            try
+            {
+                BUS.LichThiBUS.Instance.Load(dtgv_dkthilai, int.Parse(id_lopthilai.Text));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
