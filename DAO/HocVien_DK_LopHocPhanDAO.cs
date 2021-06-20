@@ -22,7 +22,7 @@ namespace DAO
             return DataProvider.Instance.ExecuteNonQuery(query);
         }
 
-        public List<HocVien> LoadLop(int id)
+        public List<HocVien> LoadLop(int id)//load danh sach thong tin SV cua 1 lop
         {
             List<HocVien> listHV = new List<HocVien> ();
             string query = "select ID_HocVien, HoTen, SDT, GioiTinh, NgaySinh from HOCVIEN_DANGKY_LOPHOCPHAN, HOCVIEN where HOCVIEN_DANGKY_LOPHOCPHAN.ID_Lop = " + id+ " and HOCVIEN_DANGKY_LOPHOCPHAN.ID_HocVien = HOCVIEN.ID";
@@ -40,6 +40,25 @@ namespace DAO
 
                 listHV.Add(newHV);
             }    
+            return listHV;
+        }
+
+        public List<HocVien_DK_LopHocPhan> load(int id)//load danh sach SV de nhap diem
+        {
+            List<HocVien_DK_LopHocPhan> listHV = new List<HocVien_DK_LopHocPhan> ();
+            string query = "Select  ID_HocVien, Diem from HOCVIEN_DANGKY_LOPHOCPHAN where ID_Lop = " + id + "";
+            DataTable data = DataProvider.Instance.ExecuxeQuery(query);
+
+            foreach (DataRow item in data.Rows)
+            {
+                int id_hv = Convert.ToInt32(item["ID_HocVien"]);
+                int diem = Convert.ToInt32(item["Diem"]);
+
+                HocVien_DK_LopHocPhan newHV = new HocVien_DK_LopHocPhan(id, id_hv, diem);
+
+                listHV.Add(newHV);
+            }    
+
             return listHV;
         }
     }

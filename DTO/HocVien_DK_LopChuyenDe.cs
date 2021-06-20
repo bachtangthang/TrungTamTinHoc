@@ -31,5 +31,12 @@ namespace DTO
             this.id_HV = hv;
             this.id_Lop = lop;
         }
+
+        public HocVien_DK_LopChuyenDe(int lop, int hv, int diem)
+        {
+            this.id_HV = hv;
+            this.id_Lop = lop;
+            this.diem = diem;
+        }
     }
 }

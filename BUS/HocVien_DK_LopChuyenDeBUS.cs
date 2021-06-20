@@ -28,5 +28,10 @@ namespace BUS
         {
             data.DataSource = DAO.HocVien_DK_LopChuyenDeDAO.Instance.LoadLop(id);
         }
+
+        public void load(DataGridView data, int id)
+        {
+            data.DataSource = DAO.HocVien_DK_LopChuyenDeDAO.Instance.load(id);
+        }
     }
 }
