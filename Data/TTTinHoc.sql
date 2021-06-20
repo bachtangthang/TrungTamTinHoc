@@ -160,6 +160,16 @@ create table HOCVIEN_DANGKY_LOPCHUYENDE
 	primary key(ID_LopChuyenDe, ID_HocVien)
 )
 
+create table HOCVIEN_LICHTHI
+(
+	ID_HocVien int,
+	ID_LichThi int,
+	lanthi int,
+	ngayDK date,
+	diem int,
+	primary key(ID_HocVien, ID_LichThi)
+)
+
 alter table LOPCHUYENDE	add SoLuong int;
 alter table LOPCHUYENDE add SoLuongToiDa int;
 -----------------------------------------------------------
@@ -194,6 +204,9 @@ alter table HOCVIEN_DANGKY_LOPCHUYENDE add constraint FK_DANGKYCHUYENDE_2 foreig
 
 alter table CHITIETHOADONCHUYENDE add constraint FK_CHITIETHOADONCUCHUYENDE_1 foreign key (ID_ChuyenDe) references CHUYENDE(ID_ChuyenDe)
 alter table CHITIETHOADONCHUYENDE add constraint FK_CHITIETHOADONCUCHUYENDE_2 foreign key (ID_HD) references HOADON(ID_HoaDon)
+
+alter table HOCVIEN_LICHTHI add constraint FK_DK_THI_1 foreign key (ID_LichThi) references LICHTHI(ID_LichThi)
+alter table HOCVIEN_LICHTHI add constraint FK_DK_THI_2 foreign key (ID_HocVien) references HOCVIEN(ID)
 
 
 
