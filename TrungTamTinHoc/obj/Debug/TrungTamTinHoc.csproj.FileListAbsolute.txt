@@ -20,4 +20,3 @@ C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\bin\Debug\DTO.exe.config
 C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\bin\Debug\DAO.pdb
 C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\bin\Debug\DAO.exe.config
 C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\obj\Debug\TrungTamTinHoc.fGiaoVu.resources
-C:\Users\DELL\Desktop\TrungTamTinHoc\TrungTamTinHoc\obj\Debug\TrungTamTinHoc.Form_new.resources
