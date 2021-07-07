@@ -625,8 +625,7 @@ namespace TrungTamTinHoc
             this.bt_TimKiem.Size = new System.Drawing.Size(176, 74);
             this.bt_TimKiem.TabIndex = 7;
             this.bt_TimKiem.Text = "Tìm kiếm";
-            this.bt_TimKiem.UseVisualStyleBackColor = true;
-            // 
+            this.bt_TimKiem.UseVisualStyleBackColor = true;            // 
             // bt_Load
             // 
             this.bt_Load.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
