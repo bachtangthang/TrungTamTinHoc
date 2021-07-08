@@ -31,10 +31,16 @@ namespace DAO
 
         public int check_ID(int id)
         {
-            string query = "select * from HOCVIEN where HOCVIEN.ID = "+id+"  ";
+            string query = "select count (*) from HOCVIEN where HOCVIEN.ID = "+id+"  ";
             return Convert.ToInt32(DataProvider.Instance.ExecuteScalar(query));
         }
 
+        public DataTable timkiemHV(int id)
+        {
+            string query = "select * from HOCVIEN where HOCVIEN.ID = "+id+" ";
+            DataTable data = DataProvider.Instance.ExecuxeQuery(query);
+            return data;
+        }
         public int ThemHV(HocVien hv)
         {
             string query = "insert into HOCVIEN (ID, HoTen, SDT, GioiTinh, NgaySinh) values ("+hv.Id+", '"+hv.Hoten+"', '"+hv.Sdt+"', '"+hv.Sex+"', '"+hv.Ngaysinh+"');";//query them hocvien

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,6 +30,11 @@ namespace BUS
         {
             HocVien hv = new HocVien(id, name, sdt, sex, dob);
             return HocVienDAO.Instance.ThemHV(hv);
+        }
+
+        public DataTable TKHocVien(int id)
+        {
+            return DAO.HocVienDAO.Instance.timkiemHV(id);
         }
     }
 }

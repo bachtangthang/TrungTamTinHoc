@@ -19,8 +19,8 @@ namespace TrungTamTinHoc
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //fNhanViencs f = new fNhanViencs();    
-            fGiaoVu f = new fGiaoVu();
+            fNhanViencs f = new fNhanViencs();    
+            //fGiaoVu f = new fGiaoVu();
             this.Hide();
             f.ShowDialog();
             this.Show();

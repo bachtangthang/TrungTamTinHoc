@@ -28,5 +28,10 @@ namespace DTO
             this.sex = sex;
             this.ngaysinh = dob;
         }
+
+        public HocVien()
+        {
+
+        }
     }
 }

@@ -19,7 +19,7 @@ namespace DAO
         public List<LichThi> Load(int idlop)
         {
             List<LichThi> lich = new List<LichThi>();
-            string query = "select ID_LichThi, PhongThi, ThoiGian , Ngay from LICHTHI where LICHTHI.ID_LopHocPhan = " + idlop + "";
+            string query = "select ID_LichThi, Ngay, PhongThi, ThoiGian from LICHTHI where LICHTHI.ID_LopHocPhan = " + idlop + "";
             DataTable data = DataProvider.Instance.ExecuxeQuery(query);
 
             foreach (DataRow item in data.Rows)

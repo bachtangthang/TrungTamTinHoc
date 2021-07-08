@@ -76,7 +76,6 @@ namespace TrungTamTinHoc
             this.panel11 = new System.Windows.Forms.Panel();
             this.dtgv_Lop = new System.Windows.Forms.DataGridView();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.bt_TimKiem = new System.Windows.Forms.Button();
             this.bt_Load = new System.Windows.Forms.Button();
             this.bt_Dangky = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -90,7 +89,6 @@ namespace TrungTamTinHoc
             this.panel21 = new System.Windows.Forms.Panel();
             this.dtgv_chuyende = new System.Windows.Forms.DataGridView();
             this.panel22 = new System.Windows.Forms.Panel();
-            this.bt_timkiemchuyende = new System.Windows.Forms.Button();
             this.bt_loadcd = new System.Windows.Forms.Button();
             this.bt_dkcd = new System.Windows.Forms.Button();
             this.panel23 = new System.Windows.Forms.Panel();
@@ -108,6 +106,7 @@ namespace TrungTamTinHoc
             this.panel19 = new System.Windows.Forms.Panel();
             this.id_lopthilai = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.bt_TKHocVien = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -194,11 +193,12 @@ namespace TrungTamTinHoc
             // 
             // panel7
             // 
+            this.panel7.Controls.Add(this.bt_TKHocVien);
             this.panel7.Controls.Add(this.bt_kiemtraID);
             this.panel7.Controls.Add(this.btn_DangKyHV);
             this.panel7.Location = new System.Drawing.Point(673, 9);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(204, 412);
+            this.panel7.Size = new System.Drawing.Size(204, 533);
             this.panel7.TabIndex = 7;
             // 
             // bt_kiemtraID
@@ -215,7 +215,7 @@ namespace TrungTamTinHoc
             // btn_DangKyHV
             // 
             this.btn_DangKyHV.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_DangKyHV.Location = new System.Drawing.Point(12, 219);
+            this.btn_DangKyHV.Location = new System.Drawing.Point(12, 404);
             this.btn_DangKyHV.Name = "btn_DangKyHV";
             this.btn_DangKyHV.Size = new System.Drawing.Size(176, 74);
             this.btn_DangKyHV.TabIndex = 6;
@@ -609,23 +609,13 @@ namespace TrungTamTinHoc
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.bt_TimKiem);
             this.panel10.Controls.Add(this.bt_Load);
             this.panel10.Controls.Add(this.bt_Dangky);
-            this.panel10.Location = new System.Drawing.Point(685, 3);
+            this.panel10.Location = new System.Drawing.Point(669, 3);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(204, 412);
             this.panel10.TabIndex = 8;
             // 
-            // bt_TimKiem
-            // 
-            this.bt_TimKiem.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_TimKiem.Location = new System.Drawing.Point(12, 18);
-            this.bt_TimKiem.Name = "bt_TimKiem";
-            this.bt_TimKiem.Size = new System.Drawing.Size(176, 74);
-            this.bt_TimKiem.TabIndex = 7;
-            this.bt_TimKiem.Text = "Tìm kiếm";
-            this.bt_TimKiem.UseVisualStyleBackColor = true;            // 
             // bt_Load
             // 
             this.bt_Load.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -731,7 +721,7 @@ namespace TrungTamTinHoc
             this.panel21.Controls.Add(this.dtgv_chuyende);
             this.panel21.Location = new System.Drawing.Point(3, 167);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(646, 366);
+            this.panel21.Size = new System.Drawing.Size(646, 399);
             this.panel21.TabIndex = 9;
             // 
             // dtgv_chuyende
@@ -741,28 +731,17 @@ namespace TrungTamTinHoc
             this.dtgv_chuyende.Name = "dtgv_chuyende";
             this.dtgv_chuyende.RowHeadersWidth = 51;
             this.dtgv_chuyende.RowTemplate.Height = 24;
-            this.dtgv_chuyende.Size = new System.Drawing.Size(628, 360);
+            this.dtgv_chuyende.Size = new System.Drawing.Size(628, 393);
             this.dtgv_chuyende.TabIndex = 0;
             // 
             // panel22
             // 
-            this.panel22.Controls.Add(this.bt_timkiemchuyende);
             this.panel22.Controls.Add(this.bt_loadcd);
             this.panel22.Controls.Add(this.bt_dkcd);
-            this.panel22.Location = new System.Drawing.Point(685, 3);
+            this.panel22.Location = new System.Drawing.Point(672, 3);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(204, 412);
             this.panel22.TabIndex = 8;
-            // 
-            // bt_timkiemchuyende
-            // 
-            this.bt_timkiemchuyende.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_timkiemchuyende.Location = new System.Drawing.Point(12, 18);
-            this.bt_timkiemchuyende.Name = "bt_timkiemchuyende";
-            this.bt_timkiemchuyende.Size = new System.Drawing.Size(176, 74);
-            this.bt_timkiemchuyende.TabIndex = 7;
-            this.bt_timkiemchuyende.Text = "Tìm kiếm";
-            this.bt_timkiemchuyende.UseVisualStyleBackColor = true;
             // 
             // bt_loadcd
             // 
@@ -933,6 +912,17 @@ namespace TrungTamTinHoc
             this.label13.TabIndex = 3;
             this.label13.Text = "ID lớp:";
             // 
+            // bt_TKHocVien
+            // 
+            this.bt_TKHocVien.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_TKHocVien.Location = new System.Drawing.Point(12, 206);
+            this.bt_TKHocVien.Name = "bt_TKHocVien";
+            this.bt_TKHocVien.Size = new System.Drawing.Size(176, 74);
+            this.bt_TKHocVien.TabIndex = 7;
+            this.bt_TKHocVien.Text = "Tìm kiếm ";
+            this.bt_TKHocVien.UseVisualStyleBackColor = true;
+            this.bt_TKHocVien.Click += new System.EventHandler(this.bt_TKHocVien_Click);
+            // 
             // fNhanViencs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1035,7 +1025,6 @@ namespace TrungTamTinHoc
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.TextBox tb_IDHV;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button bt_TimKiem;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Button btn_timkiemLop;
         private System.Windows.Forms.Panel panel13;
@@ -1061,7 +1050,6 @@ namespace TrungTamTinHoc
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.DataGridView dtgv_chuyende;
         private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.Button bt_timkiemchuyende;
         private System.Windows.Forms.Button bt_loadcd;
         private System.Windows.Forms.Button bt_dkcd;
         private System.Windows.Forms.Panel panel23;
@@ -1078,5 +1066,6 @@ namespace TrungTamTinHoc
         private System.Windows.Forms.DataGridView dtgv_HocVien;
         private System.Windows.Forms.TextBox tb_ID;
         private System.Windows.Forms.ComboBox cb_LoaiLop;
+        private System.Windows.Forms.Button bt_TKHocVien;
     }
 }

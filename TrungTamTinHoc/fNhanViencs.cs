@@ -39,12 +39,27 @@ namespace TrungTamTinHoc
         {
             try
             {
-                int id = int.Parse(tb_ID.Text);
-                string name = tb_name.Text;
-                string sdt = tb_sdt.Text;
-                string sex = cb_gioitinh.Text;
-                DateTime dob = dt_ngaysinh.Value;
-                BUS.HocVienBUS.Instance.DangKyHV(id, name, sdt, sex, dob);
+                int val = BUS.HocVienBUS.Instance.Check_ID(int.Parse(tb_ID.Text));
+                //int val = int.Parse(TextBox1.Text);
+                int i = Convert.ToInt32(val);
+                if (i >= 1)
+                    MessageBox.Show("ID Học Viên đã tồn tại, vui lòng chọn ID khác", "Thông báo");
+                else if(i == 0)
+                {
+                    try
+                    {
+                        int id = int.Parse(tb_ID.Text);
+                        string name = tb_name.Text;
+                        string sdt = tb_sdt.Text;
+                        string sex = cb_gioitinh.Text;
+                        DateTime dob = dt_ngaysinh.Value;
+                        BUS.HocVienBUS.Instance.DangKyHV(id, name, sdt, sex, dob);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }    
             }
             catch (Exception ex)
             {
@@ -59,7 +74,7 @@ namespace TrungTamTinHoc
                 int hocky = int.Parse(tb_hocky.Text);
                 int nam = int.Parse(tb_namhoc.Text);
                 string tenlop = tb_tenMH.Text;
-                if (cb_LoaiLop.Text == "Học phần")
+                if (cb_LoaiLop.Text == "Học phần")//test data: Bryn Caldicot, hk 1 nam 2020
                 {
                     int id_mh = BUS.MonHocBUS.Instance.findID_by_Name(tenlop);
                     dtgv_lophoc.DataSource = BUS.LopHocPhanBUS.Instance.timLop(id_mh, hocky, nam);
@@ -98,9 +113,9 @@ namespace TrungTamTinHoc
                 else
                     MessageBox.Show("Đăng ký không thành công", "Thông báo");
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
-                MessageBox.Show("Học viên đã đăng ký môn học");
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -144,7 +159,7 @@ namespace TrungTamTinHoc
                 }
                 else
                 {
-                    MessageBox.Show("Học viên đã đăng ký", "Thông báo");
+                    MessageBox.Show("Không thành công", "Thông báo");
                 }
             }
             catch (Exception ex)
@@ -165,5 +180,16 @@ namespace TrungTamTinHoc
             }
         }
 
+        private void bt_TKHocVien_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                dtgv_HocVien.DataSource = BUS.HocVienBUS.Instance.TKHocVien(int.Parse(tb_ID.Text));
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
