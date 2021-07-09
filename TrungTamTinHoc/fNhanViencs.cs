@@ -12,6 +12,10 @@ namespace TrungTamTinHoc
 {
     public partial class fNhanViencs : Form
     {
+        private int currentId;
+
+        public int CurrentId { get => currentId; set => currentId = value; }
+
         public fNhanViencs()
         {
             InitializeComponent();
@@ -91,11 +95,13 @@ namespace TrungTamTinHoc
             }
         }
 
-        private void bt_Load_Click(object sender, EventArgs e)
+        private void bt_Load_Click(object sender, EventArgs e)//Load danh sách học viên của 1 lớp
         {
             try
             {
                 BUS.HocVien_DK_LopHocPhanBUS.Instance.LoadLop(dtgv_Lop, int.Parse(tb_Idlop.Text));
+
+                tb_HocPhi.Text = BUS.MonHocBUS.Instance.HocPhi(int.Parse(tb_Idlop.Text)).ToString();
             }
             catch (Exception ex)
             {
@@ -103,7 +109,7 @@ namespace TrungTamTinHoc
             }
         }
 
-        private void bt_Dangky_Click(object sender, EventArgs e)
+        private void bt_Dangky_Click(object sender, EventArgs e)//Đăng ký lớp học phần cho học viên
         {
             try
             {

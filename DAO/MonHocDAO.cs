@@ -21,5 +21,11 @@ namespace DAO
             string query = "select ID_MonHoc from MONHOC where MONHOC.Ten like '%" + ten + "%'";
             return Convert.ToInt32(DataProvider.Instance.ExecuteScalar(query));
         }
+
+        public float HocPhi(int id)
+        {
+            string query = "select mh.HocPhi from MONHOC mh, LOPHOCPHAN lhp where lhp.ID_Lop = " + id + " and lhp.ID_MonHoc = mh.ID_MonHoc;  ";
+            return Convert.ToSingle(DataProvider.Instance.ExecuteScalar(query));
+        }
     }
 }

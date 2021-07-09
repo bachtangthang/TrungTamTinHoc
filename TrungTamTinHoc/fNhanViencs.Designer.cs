@@ -108,6 +108,12 @@ namespace TrungTamTinHoc
             this.id_lopthilai = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.bt_KTHV = new System.Windows.Forms.Button();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.tb_HocPhi = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.tb_HPCD = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -146,6 +152,8 @@ namespace TrungTamTinHoc
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_dkthilai)).BeginInit();
             this.panel20.SuspendLayout();
             this.panel19.SuspendLayout();
+            this.panel27.SuspendLayout();
+            this.panel28.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -564,6 +572,7 @@ namespace TrungTamTinHoc
             // 
             // panel8
             // 
+            this.panel8.Controls.Add(this.panel27);
             this.panel8.Controls.Add(this.panel12);
             this.panel8.Controls.Add(this.panel11);
             this.panel8.Controls.Add(this.panel10);
@@ -604,9 +613,9 @@ namespace TrungTamTinHoc
             // panel11
             // 
             this.panel11.Controls.Add(this.dtgv_Lop);
-            this.panel11.Location = new System.Drawing.Point(3, 167);
+            this.panel11.Location = new System.Drawing.Point(3, 249);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(646, 399);
+            this.panel11.Size = new System.Drawing.Size(646, 317);
             this.panel11.TabIndex = 9;
             // 
             // dtgv_Lop
@@ -616,7 +625,7 @@ namespace TrungTamTinHoc
             this.dtgv_Lop.Name = "dtgv_Lop";
             this.dtgv_Lop.RowHeadersWidth = 51;
             this.dtgv_Lop.RowTemplate.Height = 24;
-            this.dtgv_Lop.Size = new System.Drawing.Size(628, 393);
+            this.dtgv_Lop.Size = new System.Drawing.Size(628, 311);
             this.dtgv_Lop.TabIndex = 0;
             // 
             // panel10
@@ -625,13 +634,13 @@ namespace TrungTamTinHoc
             this.panel10.Controls.Add(this.bt_Dangky);
             this.panel10.Location = new System.Drawing.Point(669, 3);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(204, 412);
+            this.panel10.Size = new System.Drawing.Size(204, 534);
             this.panel10.TabIndex = 8;
             // 
             // bt_Load
             // 
             this.bt_Load.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Load.Location = new System.Drawing.Point(12, 151);
+            this.bt_Load.Location = new System.Drawing.Point(12, 144);
             this.bt_Load.Name = "bt_Load";
             this.bt_Load.Size = new System.Drawing.Size(176, 74);
             this.bt_Load.TabIndex = 5;
@@ -642,7 +651,7 @@ namespace TrungTamTinHoc
             // bt_Dangky
             // 
             this.bt_Dangky.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Dangky.Location = new System.Drawing.Point(12, 306);
+            this.bt_Dangky.Location = new System.Drawing.Point(12, 300);
             this.bt_Dangky.Name = "bt_Dangky";
             this.bt_Dangky.Size = new System.Drawing.Size(176, 74);
             this.bt_Dangky.TabIndex = 6;
@@ -691,6 +700,7 @@ namespace TrungTamTinHoc
             // 
             // panel17
             // 
+            this.panel17.Controls.Add(this.panel28);
             this.panel17.Controls.Add(this.panel18);
             this.panel17.Controls.Add(this.panel21);
             this.panel17.Controls.Add(this.panel22);
@@ -731,9 +741,9 @@ namespace TrungTamTinHoc
             // panel21
             // 
             this.panel21.Controls.Add(this.dtgv_chuyende);
-            this.panel21.Location = new System.Drawing.Point(3, 167);
+            this.panel21.Location = new System.Drawing.Point(5, 249);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(646, 399);
+            this.panel21.Size = new System.Drawing.Size(646, 314);
             this.panel21.TabIndex = 9;
             // 
             // dtgv_chuyende
@@ -743,7 +753,7 @@ namespace TrungTamTinHoc
             this.dtgv_chuyende.Name = "dtgv_chuyende";
             this.dtgv_chuyende.RowHeadersWidth = 51;
             this.dtgv_chuyende.RowTemplate.Height = 24;
-            this.dtgv_chuyende.Size = new System.Drawing.Size(628, 393);
+            this.dtgv_chuyende.Size = new System.Drawing.Size(628, 308);
             this.dtgv_chuyende.TabIndex = 0;
             // 
             // panel22
@@ -752,7 +762,7 @@ namespace TrungTamTinHoc
             this.panel22.Controls.Add(this.bt_dkcd);
             this.panel22.Location = new System.Drawing.Point(672, 3);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(204, 412);
+            this.panel22.Size = new System.Drawing.Size(204, 560);
             this.panel22.TabIndex = 8;
             // 
             // bt_loadcd
@@ -936,6 +946,64 @@ namespace TrungTamTinHoc
             this.bt_KTHV.UseVisualStyleBackColor = true;
             this.bt_KTHV.Click += new System.EventHandler(this.bt_KTHV_Click);
             // 
+            // panel27
+            // 
+            this.panel27.Controls.Add(this.tb_HocPhi);
+            this.panel27.Controls.Add(this.label16);
+            this.panel27.Location = new System.Drawing.Point(3, 167);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(646, 76);
+            this.panel27.TabIndex = 14;
+            // 
+            // tb_HocPhi
+            // 
+            this.tb_HocPhi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_HocPhi.Location = new System.Drawing.Point(218, 18);
+            this.tb_HocPhi.Multiline = true;
+            this.tb_HocPhi.Name = "tb_HocPhi";
+            this.tb_HocPhi.ReadOnly = true;
+            this.tb_HocPhi.Size = new System.Drawing.Size(327, 36);
+            this.tb_HocPhi.TabIndex = 1;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(30, 18);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(129, 33);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "Học Phí:";
+            // 
+            // panel28
+            // 
+            this.panel28.Controls.Add(this.tb_HPCD);
+            this.panel28.Controls.Add(this.label17);
+            this.panel28.Location = new System.Drawing.Point(5, 167);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(646, 76);
+            this.panel28.TabIndex = 15;
+            // 
+            // tb_HPCD
+            // 
+            this.tb_HPCD.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_HPCD.Location = new System.Drawing.Point(218, 18);
+            this.tb_HPCD.Multiline = true;
+            this.tb_HPCD.Name = "tb_HPCD";
+            this.tb_HPCD.ReadOnly = true;
+            this.tb_HPCD.Size = new System.Drawing.Size(327, 36);
+            this.tb_HPCD.TabIndex = 1;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(30, 18);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(129, 33);
+            this.label17.TabIndex = 3;
+            this.label17.Text = "Học Phí:";
+            // 
             // fNhanViencs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -997,6 +1065,10 @@ namespace TrungTamTinHoc
             this.panel20.PerformLayout();
             this.panel19.ResumeLayout(false);
             this.panel19.PerformLayout();
+            this.panel27.ResumeLayout(false);
+            this.panel27.PerformLayout();
+            this.panel28.ResumeLayout(false);
+            this.panel28.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1081,5 +1153,11 @@ namespace TrungTamTinHoc
         private System.Windows.Forms.ComboBox cb_LoaiLop;
         private System.Windows.Forms.Button bt_TKHocVien;
         private System.Windows.Forms.Button bt_KTHV;
+        private System.Windows.Forms.Panel panel27;
+        private System.Windows.Forms.TextBox tb_HocPhi;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Panel panel28;
+        private System.Windows.Forms.TextBox tb_HPCD;
+        private System.Windows.Forms.Label label17;
     }
 }

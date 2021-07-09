@@ -19,11 +19,29 @@ namespace TrungTamTinHoc
 
         private void button1_Click(object sender, EventArgs e)
         {
-            fNhanViencs f = new fNhanViencs();    
-            //fGiaoVu f = new fGiaoVu();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
+            if (Login(tb_TenDangNhap.Text, tb_MatKhau.Text) )
+            {
+                string role = BUS.NguoiDungBUS.Instance.loaiTK(tb_TenDangNhap.Text, tb_MatKhau.Text);
+                if (role == "NhanVien")
+                {
+                    fNhanViencs f = new fNhanViencs();
+                    //fGiaoVu f = new fGiaoVu();
+                    this.Hide();
+                    f.ShowDialog();
+                    this.Show();
+                }
+                else if(role == "GIAOVU")
+                {
+                    fGiaoVu f = new fGiaoVu();
+                    this.Hide();
+                    f.ShowDialog();
+                    this.Show();
+                }    
+            }
+            else
+            {
+                MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!", "Thông báo");
+            }    
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -34,6 +52,11 @@ namespace TrungTamTinHoc
         private void tb_MatKhau_TextChanged(object sender, EventArgs e)
         {
 
+        }
+        
+        bool Login(string ten, string pass)
+        {
+            return BUS.NguoiDungBUS.Instance.Login(ten, pass);
         }
     }
 }

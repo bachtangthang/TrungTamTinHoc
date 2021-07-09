@@ -53,6 +53,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="HoaDonBUS.cs" />
     <Compile Include="HocVienBUS.cs" />
     <Compile Include="HocVien_DK_LopChuyenDeBUS.cs" />
     <Compile Include="HocVien_DK_LopHocPhanBUS.cs" />
@@ -61,6 +62,7 @@
     <Compile Include="LopChuyenDeBUS.cs" />
     <Compile Include="LopHocPhanBUS.cs" />
     <Compile Include="MonHocBUS.cs" />
+    <Compile Include="NguoiDungBUS.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

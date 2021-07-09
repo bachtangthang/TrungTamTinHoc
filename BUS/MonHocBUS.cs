@@ -26,5 +26,10 @@ namespace BUS
         {
             return DAO.MonHocDAO.Instance.FindID_By_Name(tenlop);
         }
+
+        public float HocPhi(int id)
+        {
+            return DAO.MonHocDAO.Instance.HocPhi(id);
+        }
     }
 }

@@ -169,8 +169,20 @@ create table HOCVIEN_LICHTHI
 	primary key(ID_HocVien, ID_LichThi)
 )
 
+
+create table NGUOIDUNG
+(
+	username nvarchar(20),
+	pass	nvarchar(20),
+	loai nvarchar(20), 
+	id int
+)
+
 alter table LOPCHUYENDE	add SoLuong int;
 alter table LOPCHUYENDE add SoLuongToiDa int;
+alter table CHITIETHOADON add GiaTien float;
+alter table CHITIETHOADONCHUYENDE add GiaTien float;
+alter table HOADON add TongTien float;
 -----------------------------------------------------------
 -----------------------------------------------------------
 alter table HOADON add constraint FK_HOADON_HOCVIEN foreign key (ID_HocVien) references HOCVIEN(ID)

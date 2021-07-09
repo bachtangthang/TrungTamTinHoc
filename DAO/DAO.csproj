@@ -54,6 +54,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="HoaDonDAO.cs" />
     <Compile Include="HocVienDAO.cs" />
     <Compile Include="HocVien_DK_LopChuyenDeDAO.cs" />
     <Compile Include="HocVien_DK_LopHocPhanDAO.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="LopChuyenDeDAO.cs" />
     <Compile Include="LopHocPhanDAO.cs" />
     <Compile Include="MonHocDAO.cs" />
+    <Compile Include="NguoiDungDAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
