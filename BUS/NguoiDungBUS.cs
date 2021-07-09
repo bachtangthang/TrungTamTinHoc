@@ -26,5 +26,10 @@ namespace BUS
         {
             return DAO.NguoiDungDAO.Instance.loaiTK(ten, mk);
         }
+
+        public int getID(string ten, string mk)
+        {
+            return DAO.NguoiDungDAO.Instance.getID(ten, mk);
+        }
     }
 }

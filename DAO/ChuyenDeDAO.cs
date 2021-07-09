@@ -29,10 +29,22 @@ namespace DAO
             return cd;
         }
 
-        public int FindID_By_Name(string ten)
+        public int FindID_By_Name(string ten)//Tìm id chuyên đề thông qua tên
         {
             string query = "select ID_ChuyenDe from CHUYENDE where CHUYENDE.TenChuyenDe like '%"+ten+"%'";
             return Convert.ToInt32(DataProvider.Instance.ExecuteScalar(query));
+        }
+
+        public float HocPhi(int id)//Lấy học phí thông qua id lớp
+        {
+            string query = "select cd.GiaTien from CHUYENDE cd, LOPCHUYENDE lcd where lcd.ID_LopChuyenDe = " + id + " and lcd.ID_ChuyenDeMo = cd.ID_ChuyenDe;  ";
+            return Convert.ToSingle(DataProvider.Instance.ExecuteScalar(query));
+        }
+
+        public int idMH(int id_lop)//tìm id MH bằng ID lớp
+        {
+            string query = "select lcd.ID_ChuyenDeMo from LOPCHUYENDE lcd where lcd.ID_LopChuyenDe = " + id_lop + ";";
+            return Convert.ToInt32(DAO.DataProvider.Instance.ExecuteScalar(query));
         }
     }
 }

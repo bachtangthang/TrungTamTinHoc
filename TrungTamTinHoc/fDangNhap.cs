@@ -12,6 +12,10 @@ namespace TrungTamTinHoc
 {
     public partial class fDangNhap : Form
     {
+        private int id;
+
+        public int Id { get => id; set => id = value; }
+
         public fDangNhap()
         {
             InitializeComponent();
@@ -19,13 +23,13 @@ namespace TrungTamTinHoc
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (Login(tb_TenDangNhap.Text, tb_MatKhau.Text) )
+            if (Login(tb_TenDangNhap.Text, tb_MatKhau.Text) )//Login thành công
             {
-                string role = BUS.NguoiDungBUS.Instance.loaiTK(tb_TenDangNhap.Text, tb_MatKhau.Text);
+                string role = BUS.NguoiDungBUS.Instance.loaiTK(tb_TenDangNhap.Text, tb_MatKhau.Text);//kiểm tra role
                 if (role == "NhanVien")
                 {
                     fNhanViencs f = new fNhanViencs();
-                    //fGiaoVu f = new fGiaoVu();
+                    loginUser.Id = BUS.NguoiDungBUS.Instance.getID(tb_TenDangNhap.Text, tb_MatKhau.Text);//Lưu lại id của nhân viên đăng nhập
                     this.Hide();
                     f.ShowDialog();
                     this.Show();
@@ -54,7 +58,7 @@ namespace TrungTamTinHoc
 
         }
         
-        bool Login(string ten, string pass)
+        bool Login(string ten, string pass)//Hàm login
         {
             return BUS.NguoiDungBUS.Instance.Login(ten, pass);
         }

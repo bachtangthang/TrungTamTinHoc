@@ -28,5 +28,11 @@ namespace DAO
             string query = "select nd.loai from NGUOIDUNG nd where nd.username = '" +ten+ "' and nd.pass = '" +pass+ "'; ";
             return Convert.ToString(DataProvider.Instance.ExecuteScalar(query));
         }
+
+        public int getID(string ten, string mk)
+        {
+            string query = "select nd.id from NGUOIDUNG nd where nd.username = '" + ten + "' and nd.pass = '" + mk + "'; ";
+            return Convert.ToInt32(DataProvider.Instance.ExecuteScalar(query));
+        }
     }
 }

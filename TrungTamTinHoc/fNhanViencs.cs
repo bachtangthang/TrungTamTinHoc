@@ -12,9 +12,9 @@ namespace TrungTamTinHoc
 {
     public partial class fNhanViencs : Form
     {
-        private int currentId;
+        private int id;
 
-        public int CurrentId { get => currentId; set => currentId = value; }
+        public int Id { get => id; set => id = value; }
 
         public fNhanViencs()
         {
@@ -113,11 +113,30 @@ namespace TrungTamTinHoc
         {
             try
             {
-                int i = BUS.HocVien_DK_LopHocPhanBUS.Instance.DangKy(int.Parse(tb_IDHV.Text), int.Parse(tb_Idlop.Text));
+                int i = BUS.HocVien_DK_LopHocPhanBUS.Instance.DangKy(int.Parse(tb_IDHV.Text), int.Parse(tb_Idlop.Text));//Thêm vào bảng HocVien_DK_LopHocPhan
                 if (i == 1)
                     MessageBox.Show("Đăng ký thành công", "Thông báo");
                 else
                     MessageBox.Show("Đăng ký không thành công", "Thông báo");
+
+                try
+                {
+                    themHoaDon(loginUser.Id,int.Parse(tb_IDHV.Text), int.Parse(tb_HocPhi.Text));//Thêm vào bảng HOADON
+                    try
+                    {
+                        int id_mh = BUS.MonHocBUS.Instance.idMH(int.Parse(tb_Idlop.Text));
+                        int id_hd = BUS.HoaDonBUS.Instance.idHD();
+                        BUS.ChiTietHoaDonBUS.Instance.themCTHD(id_mh, id_hd, float.Parse(tb_HocPhi.Text));
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
             catch(Exception ex)
             {
@@ -125,11 +144,13 @@ namespace TrungTamTinHoc
             }
         }
 
-        private void bt_loadcd_Click(object sender, EventArgs e)
+        private void bt_loadcd_Click(object sender, EventArgs e)//Load danh sách học viên của 1 lớp chuyên đề
         {
             try
             {
                 BUS.HocVien_DK_LopChuyenDeBUS.Instance.LoadLop(dtgv_chuyende, int.Parse(tb_idlop_dkcd.Text));
+
+                tb_HPCD.Text = BUS.ChuyenDeBUS.Instance.HocPhi(int.Parse(tb_idlop_dkcd.Text)).ToString();
             }
             catch (Exception ex)
             {
@@ -141,11 +162,29 @@ namespace TrungTamTinHoc
         {
             try
             {
-                int i = BUS.HocVien_DK_LopChuyenDeBUS.Instance.DangKy(int.Parse(tb_idhv_dkcd.Text), int.Parse(tb_idlop_dkcd.Text));
+                int i = BUS.HocVien_DK_LopChuyenDeBUS.Instance.DangKy(int.Parse(tb_idhv_dkcd.Text), int.Parse(tb_idlop_dkcd.Text));//Thêm vào bảng HocVien_DK_LopChuyenDe
                 if (i == 1)
                     MessageBox.Show("Đăng ký thành công", "Thông báo");
                 else
                     MessageBox.Show("Đăng ký không thành công", "Thông báo");
+                try
+                {
+                    themHoaDon(loginUser.Id, int.Parse(tb_idhv_dkcd.Text), int.Parse(tb_HPCD.Text));//Thêm vào bảng HOADON
+                    try
+                    {
+                        int id_mh = BUS.ChuyenDeBUS.Instance.idMH(int.Parse(tb_idlop_dkcd.Text));
+                        int id_hd = BUS.HoaDonBUS.Instance.idHD();
+                        BUS.ChiTietHoaDonChuyenDeBUS.Instance.themCTHD(id_mh, id_hd, float.Parse(tb_HPCD.Text));
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
             catch (Exception ex)
             {
@@ -226,5 +265,17 @@ namespace TrungTamTinHoc
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private int themHoaDon(int id_nv, int id_hv, float tien)
+        {
+            return BUS.HoaDonBUS.Instance.themHD(id_nv, id_hv, tien);
+        }
+    }
+
+    public class loginUser
+    {
+        private static int id;
+
+        public static int Id { get => id; set => id = value; }
     }
 }

@@ -19,7 +19,13 @@ namespace DAO
         public int themHD(HoaDon hd)
         {
             string query = "insert into HOADON (NguoiThucHien, ID_HocVien, TongTien)values ("+hd.NguoiThucHien+", "+hd.Id_Hv+", "+hd.TongTien+"); ";
-            return DataProvider.Instance.ExecuteNonQuery(query);
+            return DAO.DataProvider.Instance.ExecuteNonQuery(query);
+        }
+
+        public int idHD()
+        {
+            string query = "SELECT IDENT_CURRENT('HOADON');";
+            return Convert.ToInt32(DAO.DataProvider.Instance.ExecuteScalar(query));
         }
     }
 }

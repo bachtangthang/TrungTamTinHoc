@@ -26,5 +26,15 @@ namespace BUS
         {
             return DAO.ChuyenDeDAO.Instance.FindID_By_Name(tenlop);
         }
+
+        public float HocPhi(int id)
+        {
+            return DAO.ChuyenDeDAO.Instance.HocPhi(id);
+        }
+
+        public int idMH(int id_lop)//Tìm id môn học bằng id lớp
+        {
+            return DAO.ChuyenDeDAO.Instance.idMH(id_lop);
+        }
     }
 }

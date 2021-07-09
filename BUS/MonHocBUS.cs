@@ -22,7 +22,7 @@ namespace BUS
             //data.DataSource = ChuyenDeDAO.Instance.
         }
 
-        public int findID_by_Name(string tenlop)
+        public int findID_by_Name(string tenlop)//Tìm id môn học bằng tên lớp
         {
             return DAO.MonHocDAO.Instance.FindID_By_Name(tenlop);
         }
@@ -30,6 +30,11 @@ namespace BUS
         public float HocPhi(int id)
         {
             return DAO.MonHocDAO.Instance.HocPhi(id);
+        }
+
+        public int idMH(int id_lop)//Tìm id môn học bằng id lớp
+        {
+            return DAO.MonHocDAO.Instance.idMH(id_lop);
         }
     }
 }

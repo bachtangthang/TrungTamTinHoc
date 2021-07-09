@@ -16,6 +16,7 @@ namespace BUS
 
         public static HoaDonBUS Instance { get { if (instance == null) instance = new HoaDonBUS(); return instance; } }
 
+
         private HoaDonBUS()
         {
 
@@ -25,6 +26,11 @@ namespace BUS
         {
             HoaDon hd = new HoaDon(id_nv, hv, tien);
             return DAO.HoaDonDAO.Instance.themHD(hd);
+        }
+
+        public int idHD()
+        {
+            return DAO.HoaDonDAO.Instance.idHD();
         }
     }
 }
