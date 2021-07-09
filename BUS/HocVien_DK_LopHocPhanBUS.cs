@@ -34,5 +34,9 @@ namespace BUS
             data.DataSource = DAO.HocVien_DK_LopHocPhanDAO.Instance.load(id);
         }
 
+        public int KTHV(int idhv, int idlop)
+        {
+            return DAO.HocVien_DK_LopHocPhanDAO.Instance.KTHV(idhv, idlop);
+        }
     }
 }

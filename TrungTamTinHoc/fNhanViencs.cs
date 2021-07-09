@@ -151,16 +151,24 @@ namespace TrungTamTinHoc
         {
             try
             {
-                DataGridViewRow row = dtgv_dkthilai.SelectedCells[0].OwningRow;
-                int id_tl = Convert.ToInt32(row.Cells["Id"].Value);
-                if (BUS.HocVien_LichThiBUS.Instance.DangKy(int.Parse(id_hvthilai.Text), id_tl) == 1)
+                int val = BUS.HocVien_DK_LopHocPhanBUS.Instance.KTHV(int.Parse(id_hvthilai.Text), int.Parse(id_lopthilai.Text));
+                if (val < 1)
                 {
-                    MessageBox.Show("Thành công               ", "Thông báo");
+                    MessageBox.Show("Học viên không đăng ký lớp học phần này", "Thông báo");
                 }
-                else
+                else if(val >=1)
                 {
-                    MessageBox.Show("Không thành công", "Thông báo");
-                }
+                    DataGridViewRow row = dtgv_dkthilai.SelectedCells[0].OwningRow;
+                    int id_tl = Convert.ToInt32(row.Cells["Id"].Value);
+                    if (BUS.HocVien_LichThiBUS.Instance.DangKy(int.Parse(id_hvthilai.Text), id_tl) == 1)
+                    {
+                        MessageBox.Show("Thành công               ", "Thông báo");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không thành công", "Thông báo");
+                    }
+                }    
             }
             catch (Exception ex)
             {
@@ -173,6 +181,7 @@ namespace TrungTamTinHoc
             try
             {
                 BUS.LichThiBUS.Instance.Load(dtgv_dkthilai, int.Parse(id_lopthilai.Text));
+
             }
             catch (Exception ex)
             {
@@ -180,11 +189,31 @@ namespace TrungTamTinHoc
             }
         }
 
-        private void bt_TKHocVien_Click(object sender, EventArgs e)
+        private void bt_TKHocVien_Click(object sender, EventArgs e)//Tìm kiếm học viên theo ID
         {
             try
             {
                 dtgv_HocVien.DataSource = BUS.HocVienBUS.Instance.TKHocVien(int.Parse(tb_ID.Text));
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void bt_KTHV_Click(object sender, EventArgs e)//Kiểm tra học viên có đăng ký học phần hay không
+        {
+            try
+            {
+                int val = BUS.HocVien_DK_LopHocPhanBUS.Instance.KTHV(int.Parse(id_hvthilai.Text), int.Parse(id_lopthilai.Text));
+                if (val >= 1)
+                {
+                    MessageBox.Show("Học viên có đăng ký lớp học phần này", "Thông báo");
+                }
+                else
+                {
+                    MessageBox.Show("Học viên không đăng ký lớp học phần này", "Thông báo");
+                }
             }
             catch(Exception ex)
             {
