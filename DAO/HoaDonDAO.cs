@@ -27,5 +27,11 @@ namespace DAO
             string query = "SELECT IDENT_CURRENT('HOADON');";
             return Convert.ToInt32(DAO.DataProvider.Instance.ExecuteScalar(query));
         }
+
+        public DataTable loadHD()
+        {
+            string query = "Select * from HOADON";
+            return DAO.DataProvider.Instance.ExecuxeQuery(query);
+        }
     }
 }

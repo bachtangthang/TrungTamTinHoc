@@ -32,5 +32,10 @@ namespace BUS
         {
             return DAO.HoaDonDAO.Instance.idHD();
         }
+
+        public DataTable loadHD()
+        {
+            return DAO.HoaDonDAO.Instance.loadHD();
+        }
     }
 }

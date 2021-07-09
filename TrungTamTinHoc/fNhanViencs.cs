@@ -270,6 +270,11 @@ namespace TrungTamTinHoc
         {
             return BUS.HoaDonBUS.Instance.themHD(id_nv, id_hv, tien);
         }
+
+        private void bt_LoadHD_Click(object sender, EventArgs e)
+        {
+            dtgv_HoaDon.DataSource = BUS.HoaDonBUS.Instance.loadHD();
+        }
     }
 
     public class loginUser
