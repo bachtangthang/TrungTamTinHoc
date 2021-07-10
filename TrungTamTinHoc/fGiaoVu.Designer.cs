@@ -90,6 +90,19 @@ namespace TrungTamTinHoc
             this.panel23 = new System.Windows.Forms.Panel();
             this.tb_SoLuongToiDa = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.btn_TKLop = new System.Windows.Forms.Button();
+            this.btn_LoadLop = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.dtgv_dsLop = new System.Windows.Forms.DataGridView();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.cb_KieuMon = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.tb_Lop = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel24.SuspendLayout();
@@ -116,6 +129,13 @@ namespace TrungTamTinHoc
             this.panel21.SuspendLayout();
             this.panel22.SuspendLayout();
             this.panel23.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_dsLop)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -123,6 +143,7 @@ namespace TrungTamTinHoc
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -463,6 +484,7 @@ namespace TrungTamTinHoc
             this.bt_MoLop.TabIndex = 21;
             this.bt_MoLop.Text = "Mở lớp";
             this.bt_MoLop.UseVisualStyleBackColor = true;
+            this.bt_MoLop.Click += new System.EventHandler(this.bt_MoLop_Click);
             // 
             // btn_CheckIDGV
             // 
@@ -727,6 +749,136 @@ namespace TrungTamTinHoc
             this.label21.TabIndex = 3;
             this.label21.Text = "Số lượng:";
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.panel2);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(929, 652);
+            this.tabPage1.TabIndex = 4;
+            this.tabPage1.Text = "Danh sách lớp";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.panel6);
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Location = new System.Drawing.Point(6, 6);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(917, 631);
+            this.panel2.TabIndex = 0;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.btn_TKLop);
+            this.panel6.Controls.Add(this.btn_LoadLop);
+            this.panel6.Location = new System.Drawing.Point(209, 99);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(469, 163);
+            this.panel6.TabIndex = 25;
+            // 
+            // btn_TKLop
+            // 
+            this.btn_TKLop.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_TKLop.Location = new System.Drawing.Point(30, 49);
+            this.btn_TKLop.Name = "btn_TKLop";
+            this.btn_TKLop.Size = new System.Drawing.Size(176, 74);
+            this.btn_TKLop.TabIndex = 18;
+            this.btn_TKLop.Text = "Tìm kiếm";
+            this.btn_TKLop.UseVisualStyleBackColor = true;
+            this.btn_TKLop.Click += new System.EventHandler(this.btn_TKLop_Click);
+            // 
+            // btn_LoadLop
+            // 
+            this.btn_LoadLop.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_LoadLop.Location = new System.Drawing.Point(255, 49);
+            this.btn_LoadLop.Name = "btn_LoadLop";
+            this.btn_LoadLop.Size = new System.Drawing.Size(176, 74);
+            this.btn_LoadLop.TabIndex = 17;
+            this.btn_LoadLop.Text = "Load";
+            this.btn_LoadLop.UseVisualStyleBackColor = true;
+            this.btn_LoadLop.Click += new System.EventHandler(this.btn_LoadLop_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.dtgv_dsLop);
+            this.panel5.Location = new System.Drawing.Point(8, 281);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(891, 347);
+            this.panel5.TabIndex = 24;
+            // 
+            // dtgv_dsLop
+            // 
+            this.dtgv_dsLop.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv_dsLop.Location = new System.Drawing.Point(6, 9);
+            this.dtgv_dsLop.Name = "dtgv_dsLop";
+            this.dtgv_dsLop.RowHeadersWidth = 51;
+            this.dtgv_dsLop.RowTemplate.Height = 24;
+            this.dtgv_dsLop.Size = new System.Drawing.Size(882, 335);
+            this.dtgv_dsLop.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.cb_KieuMon);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Location = new System.Drawing.Point(666, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(233, 76);
+            this.panel4.TabIndex = 23;
+            // 
+            // cb_KieuMon
+            // 
+            this.cb_KieuMon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_KieuMon.FormattingEnabled = true;
+            this.cb_KieuMon.Items.AddRange(new object[] {
+            "Chuyên đề",
+            "Học phần"});
+            this.cb_KieuMon.Location = new System.Drawing.Point(92, 23);
+            this.cb_KieuMon.Name = "cb_KieuMon";
+            this.cb_KieuMon.Size = new System.Drawing.Size(123, 28);
+            this.cb_KieuMon.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(3, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(83, 33);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Loại:";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.tb_Lop);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Location = new System.Drawing.Point(8, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(646, 76);
+            this.panel3.TabIndex = 13;
+            // 
+            // tb_Lop
+            // 
+            this.tb_Lop.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Lop.Location = new System.Drawing.Point(218, 18);
+            this.tb_Lop.Multiline = true;
+            this.tb_Lop.Name = "tb_Lop";
+            this.tb_Lop.Size = new System.Drawing.Size(327, 36);
+            this.tb_Lop.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(30, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(106, 33);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "ID lớp:";
+            // 
             // fGiaoVu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -775,6 +927,15 @@ namespace TrungTamTinHoc
             this.panel22.PerformLayout();
             this.panel23.ResumeLayout(false);
             this.panel23.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_dsLop)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -842,5 +1003,18 @@ namespace TrungTamTinHoc
         private System.Windows.Forms.TextBox tb_SoLuongToiDa;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Button btn_KT_GVMH;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.ComboBox cb_KieuMon;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox tb_Lop;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button btn_TKLop;
+        private System.Windows.Forms.Button btn_LoadLop;
+        private System.Windows.Forms.DataGridView dtgv_dsLop;
     }
 }

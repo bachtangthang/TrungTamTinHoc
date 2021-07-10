@@ -27,5 +27,15 @@ namespace BUS
         {
             return DAO.LopHocPhanDAO.Instance.CheckIDLop(id);
         }
+
+        public DataTable findLopByID(int idlop)
+        {
+            return LopHocPhanDAO.Instance.findLopByID(idlop);
+        }
+
+        public DataTable LoadDS()
+        {
+            return LopHocPhanDAO.Instance.LoadDS();
+        }
     }
 }

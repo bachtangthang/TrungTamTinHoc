@@ -18,14 +18,24 @@ namespace BUS
 
         private LopChuyenDeBUS() { }
 
-        public DataTable timLop(int id_cd, int hocky, int nam)
+        public DataTable timLop(int id_cd, int hocky, int nam)//Tìm lớp theo id chuyên đề, năm, học kỳ
         {
             return LopChuyenDeDAO.Instance.timLop(id_cd, hocky, nam);
         }
 
-        public int CheckIDLop(int id)
+        public int CheckIDLop(int id)//kiểm tra id lớp có tồn tại
         {
             return DAO.LopChuyenDeDAO.Instance.CheckIDLop(id);
+        }
+
+        public DataTable findLopByID(int idlop)//Tìm lớp theo ID
+        {
+            return LopChuyenDeDAO.Instance.findLopByID(idlop);
+        }
+
+        public DataTable LoadDS()
+        {
+            return DAO.LopChuyenDeDAO.Instance.LoadDS();
         }
     }
 }

@@ -22,10 +22,22 @@ namespace DAO
             return DataProvider.Instance.ExecuxeQuery(query);
         }
 
-        public int CheckIDLop(int id)
+        public int CheckIDLop(int id)//kiểm tra id lớp có tồn tại
         {
             string query = "Select count (*) from LOPHOCPHAN where ID_Lop = "+id+";";
             return Convert.ToInt32(DAO.DataProvider.Instance.ExecuteScalar(query));
         }
+
+        public DataTable findLopByID(int idlop)//tìm lớp theo id
+        {
+            string query = "select * from LOPHOCPHAN where ID_Lop = " + idlop + ";";
+            return DAO.DataProvider.Instance.ExecuxeQuery(query);
+        }
+        public DataTable LoadDS()
+        {
+            string query = "select * from LOPHOCPHAN ";
+            return DAO.DataProvider.Instance.ExecuxeQuery(query);
+        }
+
     }
 }

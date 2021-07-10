@@ -247,5 +247,74 @@ namespace TrungTamTinHoc
                 }
             }    
         }
+
+        private void btn_TKLop_Click(object sender, EventArgs e)
+        {
+            if(cb_KieuMon.Text == "Học phần")
+            {
+                try
+                {
+                    dtgv_dsLop.DataSource = BUS.LopHocPhanBUS.Instance.findLopByID(int.Parse(tb_Lop.Text));
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }    
+            else if(cb_KieuMon.Text == "Chuyên đề")
+            {
+                try
+                {
+                    dtgv_dsLop.DataSource = BUS.LopChuyenDeBUS.Instance.findLopByID(int.Parse(tb_Lop.Text));
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }    
+        }
+
+        private void btn_LoadLop_Click(object sender, EventArgs e)
+        {
+            if (cb_KieuMon.Text == "Học phần")
+            {
+                try
+                {
+                    dtgv_dsLop.DataSource = BUS.LopHocPhanBUS.Instance.LoadDS();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else if (cb_KieuMon.Text == "Chuyên đề")
+            {
+                try
+                {
+                    dtgv_dsLop.DataSource = BUS.LopChuyenDeBUS.Instance.LoadDS();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void bt_MoLop_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public int MoLop(int idlop, string tenlop, int idmon, int idgv, int hocky, int namhoc, int soluong)
+        {
+            try
+            {
+
+            }
+            catch
+            {
+
+            }
+        }
     }
 }
