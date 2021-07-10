@@ -178,6 +178,13 @@ create table NGUOIDUNG
 	id int
 )
 
+create table GIAOVIEN_CHUYENDE
+(
+	ID_GiaoVien int,
+	ID_ChuyenDe int,
+	primary key(ID_GiaoVien, ID_ChuyenDe)
+)
+
 alter table LOPCHUYENDE	add SoLuong int;
 alter table LOPCHUYENDE add SoLuongToiDa int;
 alter table CHITIETHOADON add GiaTien float;
@@ -219,9 +226,10 @@ alter table CHITIETHOADONCHUYENDE add constraint FK_CHITIETHOADONCUCHUYENDE_2 fo
 alter table HOCVIEN_LICHTHI add constraint FK_DK_THI_1 foreign key (ID_LichThi) references LICHTHI(ID_LichThi)
 alter table HOCVIEN_LICHTHI add constraint FK_DK_THI_2 foreign key (ID_HocVien) references HOCVIEN(ID)
 
+alter table GIAOVIEN_CHUYENDE add constraint FK_GIANGDAY_CD_1 foreign key (ID_ChuyenDe) references CHUYENDE(ID_ChuyenDe)
+alter table GIAOVIEN_CHUYENDE add constraint FK_GIANGDAY_CD_2 foreign key (ID_GiaoVien) references GIAOVIEN(ID_GiaoVien)
 
 
-
-//SELECT CAST( GETDATE() AS Date ) from HOCVIEN_LICHTHI
-//insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK) values (1,1, GETDATE())-- AS DATE)
+--SELECT CAST( GETDATE() AS Date ) from HOCVIEN_LICHTHI
+--insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK) values (1,1, GETDATE())-- AS DATE)
 
