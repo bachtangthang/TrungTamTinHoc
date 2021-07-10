@@ -39,5 +39,10 @@ namespace DAO
             return DAO.DataProvider.Instance.ExecuxeQuery(query);
         }
 
+        public int MoLop(LopHocPhan lhp)
+        {
+            string query = "insert into LOPHOCPHAN values (" + lhp.Id_Lop + ", " + lhp.Soluong + ", " + lhp.Soluongtoida + ", '" + lhp.TenLop + "', " + lhp.Id_MH + ", " + lhp.Id_GV + ", " + lhp.Hocky + ", " + lhp.Nam + ");";
+            return DAO.DataProvider.Instance.ExecuteNonQuery(query);
+        }
     }
 }

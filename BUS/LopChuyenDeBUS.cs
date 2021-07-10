@@ -37,5 +37,11 @@ namespace BUS
         {
             return DAO.LopChuyenDeDAO.Instance.LoadDS();
         }
+
+        public int MoLop(int idlop, string tenlop, int idmon, int idgv, int hocky, int namhoc, int soluong)
+        {
+            LopChuyenDe lcd = new LopChuyenDe(idlop, tenlop, idmon, idgv, hocky, namhoc, soluong);
+            return DAO.LopChuyenDeDAO.Instance.MoLop(lcd);
+        }
     }
 }

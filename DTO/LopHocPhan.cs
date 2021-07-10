@@ -37,5 +37,17 @@ namespace DTO
             this.soluong = soluong;
             this.soluongtoida = soluongtoida;
         }
+
+        public LopHocPhan(int id_lop, string ten, int id_cd, int id_gv, int hocky, int nam, int soluongtoida)
+        {
+            this.id_Lop = id_lop;
+            this.tenLop = ten;
+            this.id_MH = id_cd;
+            this.id_GV = id_gv;
+            this.hocky = hocky;
+            this.nam = nam;
+            this.soluong = 0;
+            this.soluongtoida = soluongtoida;
+        }
     }
 }

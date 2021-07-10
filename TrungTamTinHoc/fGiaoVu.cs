@@ -302,19 +302,73 @@ namespace TrungTamTinHoc
 
         private void bt_MoLop_Click(object sender, EventArgs e)
         {
-
-        }
-
-        public int MoLop(int idlop, string tenlop, int idmon, int idgv, int hocky, int namhoc, int soluong)
-        {
             try
             {
-
+                int idlop = int.Parse(tb_IDLop.Text);
+                string tenlop = tb_TenLop.Text;
+                int idmon = int.Parse(tb_IDMH.Text);
+                int idgv = int.Parse(tb_IDGV.Text);
+                int hocky = int.Parse(tb_HK.Text);
+                int namhoc = int.Parse(tb_NH.Text);
+                int soluong = int.Parse(tb_SoLuongToiDa.Text);
+                string loai = cb_LoaiMon.Text;
+                int val = MoLop(idlop, tenlop, idmon, idgv, hocky, namhoc, soluong, loai);
+                if (val == 1)
+                    MessageBox.Show("Mở lớp thành công", "Thông báo");
+                else
+                    MessageBox.Show("Mở lớp không thành công", "Thông báo");
             }
-            catch
+            catch(Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
+        }
+
+        public int MoLop(int idlop, string tenlop, int idmon, int idgv, int hocky, int namhoc, int soluong, string loai)    //Hàm mở lớp
+        {
+            if (loai == "Học phần")
+            {
+                try
+                {
+                    int x = CheckIDLopHP(idlop);        //kiểm tra ID lớp có tồn tại hay ko
+                    int y = CheckIDGV(idgv);            //Kiểm tra ID giáo viên có tồn tại
+                    int z = Check_GV_MH(idgv, idmon);   //Kiểm tra giáo viên có đủ điều kiện dạy
+                    if((x<1) && (y>=1) &&(z>=1))
+                    {
+                        return BUS.LopHocPhanBUS.Instance.MoLop(idlop, tenlop, idmon, idgv, hocky, namhoc, soluong);  
+                    }
+                    else
+                    {
+                        return 0;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else if(loai == "Chuyên đề")
+            {
+                try
+                {
+                    int x = CheckIDLopCD(idlop);        //kiểm tra ID lớp có tồn tại hay ko
+                    int y = CheckIDGV(idgv);            //Kiểm tra ID giáo viên có tồn tại
+                    int z = Check_GV_CD(idgv, idmon);   //Kiểm tra giáo viên có đủ điều kiện dạy
+                    if ((x < 1) && (y >= 1) && (z >= 1))
+                    {
+                        return BUS.LopChuyenDeBUS.Instance.MoLop(idlop, tenlop, idmon, idgv, hocky, namhoc, soluong);
+                    }
+                    else
+                    {
+                        return 0;
+                    }
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            return 0;
         }
     }
 }
