@@ -23,6 +23,10 @@ namespace DAO
             return DataProvider.Instance.ExecuteNonQuery(query);
         }
 
-
+        public int KiemTraDKLichThi(int idHV, int idLT)//Kiểm tra học viên đã đk lịch thi chưa
+        {
+            string query = "select count (*) from HOCVIEN_LICHTHI where ID_HocVien = " + idHV + " and ID_LichThi = " + idLT + ";";
+            return Convert.ToInt32(DAO.DataProvider.Instance.ExecuteScalar(query));
+        }
     }
 }

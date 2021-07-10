@@ -21,7 +21,7 @@ namespace TrungTamTinHoc
             InitializeComponent();
         }
 
-        private void bt_kiemtraID_Click(object sender, EventArgs e)
+        private void bt_kiemtraID_Click(object sender, EventArgs e)//Kiểm tra ID học viên có thỏa mãn
         {
             try
             {
@@ -39,7 +39,7 @@ namespace TrungTamTinHoc
             }
         }
 
-        private void btn_DangKyHV_Click(object sender, EventArgs e)
+        private void btn_DangKyHV_Click(object sender, EventArgs e)//Đăng ký hoc viên
         {
             try
             {
@@ -71,7 +71,7 @@ namespace TrungTamTinHoc
             }
         }
 
-        private void btn_timkiemLop_Click(object sender, EventArgs e)
+        private void btn_timkiemLop_Click(object sender, EventArgs e)//Tìm kiếm lớp theo tên, năm học, học kỳ
         {
             try
             {
@@ -197,22 +197,31 @@ namespace TrungTamTinHoc
             try
             {
                 int val = BUS.HocVien_DK_LopHocPhanBUS.Instance.KTHV(int.Parse(id_hvthilai.Text), int.Parse(id_lopthilai.Text));
-                if (val < 1)
-                {
-                    MessageBox.Show("Học viên không đăng ký lớp học phần này", "Thông báo");
-                }
-                else if(val >=1)
+                if (val >=1)
                 {
                     DataGridViewRow row = dtgv_dkthilai.SelectedCells[0].OwningRow;
+                    int idhv = int.Parse(id_hvthilai.Text);
                     int id_tl = Convert.ToInt32(row.Cells["Id"].Value);
-                    if (BUS.HocVien_LichThiBUS.Instance.DangKy(int.Parse(id_hvthilai.Text), id_tl) == 1)
+                    int val2 = KiemTraDKLichThi(int.Parse(id_hvthilai.Text), id_tl);
+                    if(val2 < 1)
                     {
-                        MessageBox.Show("Thành công               ", "Thông báo");
+                        if (BUS.HocVien_LichThiBUS.Instance.DangKy(idhv, id_tl) == 1)
+                        {
+                            MessageBox.Show("Thành công               ", "Thông báo");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Không thành công", "Thông báo");
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Không thành công", "Thông báo");
+                        MessageBox.Show("Học viên đã đăng ký lịch thi này nên không thể đăng ký lại", "Thông báo");
                     }
+                }
+                else
+                {
+                    MessageBox.Show("Học viên không đăng ký lớp học phần này", "Thông báo");
                 }    
             }
             catch (Exception ex)
@@ -274,6 +283,11 @@ namespace TrungTamTinHoc
         private void bt_LoadHD_Click(object sender, EventArgs e)
         {
             dtgv_HoaDon.DataSource = BUS.HoaDonBUS.Instance.loadHD();
+        }
+
+        public int KiemTraDKLichThi(int idHV, int idLT)//Kiểm tra Học viên đã đăng ký lịch thi này chưa
+        {
+            return BUS.HocVien_LichThiBUS.Instance.KiemTraDKLichThi(idHV, idLT);
         }
     }
 

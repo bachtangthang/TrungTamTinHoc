@@ -22,5 +22,10 @@ namespace BUS
             HocVien_LichThi hv = new HocVien_LichThi(id_hv, id_lt);
             return DAO.HocVien_LichThiDAO.Instance.DangKy(hv);
         }
+
+        public int KiemTraDKLichThi(int idHV, int idLT)//Kiểm tra Học viên đã đăng ký lịch thi chưa
+        {
+            return DAO.HocVien_LichThiDAO.Instance.KiemTraDKLichThi(idHV, idLT);
+        }
     }
 }
