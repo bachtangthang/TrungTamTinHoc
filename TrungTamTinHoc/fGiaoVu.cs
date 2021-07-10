@@ -78,5 +78,108 @@ namespace TrungTamTinHoc
                 MessageBox.Show(ex.Message);
             }
         }
+    
+        public int CheckIDGV(int id)//Hàm kiểm tra giáo viên có tồn tại
+        {
+            try
+            {
+                return BUS.GiaoVienBUS.Instance.CheckIDGV(id);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return 0;
+            }
+        }
+
+        public int CheckIDLopHP(int id)//Hàm kiểm tra ID lớp Học phần có thỏa mãn
+        {
+            try
+            {
+                return BUS.LopHocPhanBUS.Instance.CheckIDLop(id);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return 0;
+            }
+        }
+
+        public int CheckIDLopCD(int id)//Hàm kiểm tra ID lớp Chuyên đề có thỏa mãn
+        {
+            try
+            {
+                return BUS.LopChuyenDeBUS.Instance.CheckIDLop(id);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return 0;
+            }
+        }
+
+        private void btn_CheckIDLop_Click(object sender, EventArgs e)
+        {
+            if(cb_LoaiMon.Text == "Học phần")
+            {
+                try
+                {
+                    int val = CheckIDLopHP(int.Parse(tb_IDLop.Text));
+                    if (val >=1)
+                    {
+                        MessageBox.Show("ID lớp đã tồn tại", "Thông báo");
+                    }
+                    else
+                    {
+                        MessageBox.Show("ID lớp không tồn tại", "Thông báo");
+                    }
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }   
+            else if(cb_LoaiMon.Text == "Chuyên đề")
+            {
+                try
+                {
+                    int val = CheckIDLopCD(int.Parse(tb_IDLop.Text));
+                    if (val >= 1)
+                    {
+                        MessageBox.Show("ID lớp đã tồn tại", "Thông báo");
+                    }
+                    else
+                    {
+                        MessageBox.Show("ID lớp không tồn tại", "Thông báo");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }    
+        }
+
+        private void btn_CheckIDGV_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int val = CheckIDGV(int.Parse(tb_IDGV.Text));
+                if (val >= 1)
+                {
+                    MessageBox.Show("Giáo Viên có tồn tại", "Thông báo");
+                }
+                else
+                {
+                    MessageBox.Show("Giáo Viên không tồn tại", "Thông báo");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
     }
 }

@@ -38,5 +38,11 @@ namespace DAO
             string query = "select * from LOPCHUYENDE where LOPCHUYENDE.ID_ChuyenDeMo = " + id_cd + " and HocKy = " + hocky + " and NamHoc = " + nam + "";
             return DataProvider.Instance.ExecuxeQuery(query);
         }
+
+        public int CheckIDLop(int id)
+        {
+            string query = "Select count (*) from LOPCHUYENDE where ID_LopChuyenDe = " + id + ";";
+            return Convert.ToInt32(DAO.DataProvider.Instance.ExecuteScalar(query));
+        }
     }
 }

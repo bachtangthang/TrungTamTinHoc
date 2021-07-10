@@ -22,5 +22,10 @@ namespace BUS
         {
             return LopHocPhanDAO.Instance.timLop(id_cd, hocky, nam);
         }
+
+        public int CheckIDLop(int id)
+        {
+            return DAO.LopHocPhanDAO.Instance.CheckIDLop(id);
+        }
     }
 }

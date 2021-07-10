@@ -30,7 +30,6 @@ namespace TrungTamTinHoc
         private void InitializeComponent()
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel24 = new System.Windows.Forms.Panel();
             this.cb_LoaiLop = new System.Windows.Forms.ComboBox();
@@ -59,6 +58,37 @@ namespace TrungTamTinHoc
             this.panel1 = new System.Windows.Forms.Panel();
             this.cb_Loai = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.tb_IDLop = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.tb_TenLop = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.tb_IDMH = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.tb_IDGV = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.tb_HK = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.tb_NH = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.tb_SoLuongToiDa = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.cb_LoaiMon = new System.Windows.Forms.ComboBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.bt_MoLop = new System.Windows.Forms.Button();
+            this.btn_CheckIDGV = new System.Windows.Forms.Button();
+            this.btn_CheckIDLop = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel24.SuspendLayout();
@@ -73,28 +103,30 @@ namespace TrungTamTinHoc
             this.flowLayoutPanel1.SuspendLayout();
             this.panel19.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.flowLayoutPanel4.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.panel17.SuspendLayout();
+            this.panel18.SuspendLayout();
+            this.panel20.SuspendLayout();
+            this.panel21.SuspendLayout();
+            this.panel22.SuspendLayout();
+            this.panel23.SuspendLayout();
+            this.panel26.SuspendLayout();
+            this.panel27.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(937, 681);
             this.tabControl1.TabIndex = 0;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(929, 652);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Mở lớp";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
@@ -107,7 +139,7 @@ namespace TrungTamTinHoc
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(939, 652);
+            this.tabPage2.Size = new System.Drawing.Size(929, 652);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Tìm kiếm lớp";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -378,6 +410,310 @@ namespace TrungTamTinHoc
             this.label1.TabIndex = 3;
             this.label1.Text = "Loại:";
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.panel11);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(929, 652);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Mở lớp";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.panel27);
+            this.panel11.Controls.Add(this.panel26);
+            this.panel11.Controls.Add(this.flowLayoutPanel4);
+            this.panel11.Location = new System.Drawing.Point(6, 6);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(923, 631);
+            this.panel11.TabIndex = 0;
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.Controls.Add(this.panel12);
+            this.flowLayoutPanel4.Controls.Add(this.panel17);
+            this.flowLayoutPanel4.Controls.Add(this.panel18);
+            this.flowLayoutPanel4.Controls.Add(this.panel20);
+            this.flowLayoutPanel4.Controls.Add(this.panel21);
+            this.flowLayoutPanel4.Controls.Add(this.panel22);
+            this.flowLayoutPanel4.Controls.Add(this.panel23);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(658, 599);
+            this.flowLayoutPanel4.TabIndex = 7;
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.tb_IDLop);
+            this.panel12.Controls.Add(this.label14);
+            this.panel12.Location = new System.Drawing.Point(3, 3);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(646, 76);
+            this.panel12.TabIndex = 12;
+            // 
+            // tb_IDLop
+            // 
+            this.tb_IDLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_IDLop.Location = new System.Drawing.Point(218, 18);
+            this.tb_IDLop.Multiline = true;
+            this.tb_IDLop.Name = "tb_IDLop";
+            this.tb_IDLop.Size = new System.Drawing.Size(327, 36);
+            this.tb_IDLop.TabIndex = 1;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(30, 18);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(106, 33);
+            this.label14.TabIndex = 3;
+            this.label14.Text = "ID lớp:";
+            // 
+            // panel17
+            // 
+            this.panel17.Controls.Add(this.tb_TenLop);
+            this.panel17.Controls.Add(this.label16);
+            this.panel17.Location = new System.Drawing.Point(3, 85);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(646, 76);
+            this.panel17.TabIndex = 13;
+            // 
+            // tb_TenLop
+            // 
+            this.tb_TenLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_TenLop.Location = new System.Drawing.Point(218, 18);
+            this.tb_TenLop.Multiline = true;
+            this.tb_TenLop.Name = "tb_TenLop";
+            this.tb_TenLop.Size = new System.Drawing.Size(327, 36);
+            this.tb_TenLop.TabIndex = 1;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(30, 18);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(129, 33);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "Tên lớp:";
+            // 
+            // panel18
+            // 
+            this.panel18.Controls.Add(this.tb_IDMH);
+            this.panel18.Controls.Add(this.label17);
+            this.panel18.Location = new System.Drawing.Point(3, 167);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(646, 76);
+            this.panel18.TabIndex = 14;
+            // 
+            // tb_IDMH
+            // 
+            this.tb_IDMH.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_IDMH.Location = new System.Drawing.Point(218, 18);
+            this.tb_IDMH.Multiline = true;
+            this.tb_IDMH.Name = "tb_IDMH";
+            this.tb_IDMH.Size = new System.Drawing.Size(327, 36);
+            this.tb_IDMH.TabIndex = 1;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(30, 18);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(181, 33);
+            this.label17.TabIndex = 3;
+            this.label17.Text = "ID Môn Học:";
+            // 
+            // panel20
+            // 
+            this.panel20.Controls.Add(this.tb_IDGV);
+            this.panel20.Controls.Add(this.label18);
+            this.panel20.Location = new System.Drawing.Point(3, 249);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(646, 76);
+            this.panel20.TabIndex = 15;
+            // 
+            // tb_IDGV
+            // 
+            this.tb_IDGV.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_IDGV.Location = new System.Drawing.Point(218, 18);
+            this.tb_IDGV.Multiline = true;
+            this.tb_IDGV.Name = "tb_IDGV";
+            this.tb_IDGV.Size = new System.Drawing.Size(327, 36);
+            this.tb_IDGV.TabIndex = 1;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(30, 18);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(191, 33);
+            this.label18.TabIndex = 3;
+            this.label18.Text = "ID Giáo Viên:";
+            // 
+            // panel21
+            // 
+            this.panel21.Controls.Add(this.tb_HK);
+            this.panel21.Controls.Add(this.label19);
+            this.panel21.Location = new System.Drawing.Point(3, 331);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(646, 76);
+            this.panel21.TabIndex = 16;
+            // 
+            // tb_HK
+            // 
+            this.tb_HK.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_HK.Location = new System.Drawing.Point(218, 18);
+            this.tb_HK.Multiline = true;
+            this.tb_HK.Name = "tb_HK";
+            this.tb_HK.Size = new System.Drawing.Size(327, 36);
+            this.tb_HK.TabIndex = 1;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(30, 18);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(118, 33);
+            this.label19.TabIndex = 3;
+            this.label19.Text = "Học kỳ:";
+            // 
+            // panel22
+            // 
+            this.panel22.Controls.Add(this.tb_NH);
+            this.panel22.Controls.Add(this.label20);
+            this.panel22.Location = new System.Drawing.Point(3, 413);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(646, 76);
+            this.panel22.TabIndex = 17;
+            // 
+            // tb_NH
+            // 
+            this.tb_NH.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_NH.Location = new System.Drawing.Point(218, 18);
+            this.tb_NH.Multiline = true;
+            this.tb_NH.Name = "tb_NH";
+            this.tb_NH.Size = new System.Drawing.Size(327, 36);
+            this.tb_NH.TabIndex = 1;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(30, 18);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(145, 33);
+            this.label20.TabIndex = 3;
+            this.label20.Text = "Năm học:";
+            // 
+            // panel23
+            // 
+            this.panel23.Controls.Add(this.tb_SoLuongToiDa);
+            this.panel23.Controls.Add(this.label21);
+            this.panel23.Location = new System.Drawing.Point(3, 495);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(646, 76);
+            this.panel23.TabIndex = 18;
+            // 
+            // tb_SoLuongToiDa
+            // 
+            this.tb_SoLuongToiDa.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_SoLuongToiDa.Location = new System.Drawing.Point(218, 18);
+            this.tb_SoLuongToiDa.Multiline = true;
+            this.tb_SoLuongToiDa.Name = "tb_SoLuongToiDa";
+            this.tb_SoLuongToiDa.Size = new System.Drawing.Size(327, 36);
+            this.tb_SoLuongToiDa.TabIndex = 1;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(30, 18);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(151, 33);
+            this.label21.TabIndex = 3;
+            this.label21.Text = "Số lượng:";
+            // 
+            // panel26
+            // 
+            this.panel26.Controls.Add(this.cb_LoaiMon);
+            this.panel26.Controls.Add(this.label22);
+            this.panel26.Location = new System.Drawing.Point(667, 6);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(234, 66);
+            this.panel26.TabIndex = 24;
+            // 
+            // cb_LoaiMon
+            // 
+            this.cb_LoaiMon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_LoaiMon.FormattingEnabled = true;
+            this.cb_LoaiMon.Items.AddRange(new object[] {
+            "Chuyên đề",
+            "Học phần"});
+            this.cb_LoaiMon.Location = new System.Drawing.Point(84, 18);
+            this.cb_LoaiMon.Name = "cb_LoaiMon";
+            this.cb_LoaiMon.Size = new System.Drawing.Size(123, 28);
+            this.cb_LoaiMon.TabIndex = 4;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(3, 18);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(83, 33);
+            this.label22.TabIndex = 3;
+            this.label22.Text = "Loại:";
+            // 
+            // panel27
+            // 
+            this.panel27.Controls.Add(this.bt_MoLop);
+            this.panel27.Controls.Add(this.btn_CheckIDGV);
+            this.panel27.Controls.Add(this.btn_CheckIDLop);
+            this.panel27.Location = new System.Drawing.Point(667, 85);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(238, 385);
+            this.panel27.TabIndex = 25;
+            // 
+            // bt_MoLop
+            // 
+            this.bt_MoLop.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_MoLop.Location = new System.Drawing.Point(36, 292);
+            this.bt_MoLop.Name = "bt_MoLop";
+            this.bt_MoLop.Size = new System.Drawing.Size(176, 64);
+            this.bt_MoLop.TabIndex = 21;
+            this.bt_MoLop.Text = "Mở lớp";
+            this.bt_MoLop.UseVisualStyleBackColor = true;
+            // 
+            // btn_CheckIDGV
+            // 
+            this.btn_CheckIDGV.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_CheckIDGV.Location = new System.Drawing.Point(36, 154);
+            this.btn_CheckIDGV.Name = "btn_CheckIDGV";
+            this.btn_CheckIDGV.Size = new System.Drawing.Size(176, 64);
+            this.btn_CheckIDGV.TabIndex = 20;
+            this.btn_CheckIDGV.Text = "Check ID GV";
+            this.btn_CheckIDGV.UseVisualStyleBackColor = true;
+            this.btn_CheckIDGV.Click += new System.EventHandler(this.btn_CheckIDGV_Click);
+            // 
+            // btn_CheckIDLop
+            // 
+            this.btn_CheckIDLop.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_CheckIDLop.Location = new System.Drawing.Point(36, 21);
+            this.btn_CheckIDLop.Name = "btn_CheckIDLop";
+            this.btn_CheckIDLop.Size = new System.Drawing.Size(176, 64);
+            this.btn_CheckIDLop.TabIndex = 19;
+            this.btn_CheckIDLop.Text = "Check ID lớp";
+            this.btn_CheckIDLop.UseVisualStyleBackColor = true;
+            this.btn_CheckIDLop.Click += new System.EventHandler(this.btn_CheckIDLop_Click);
+            // 
             // fGiaoVu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -406,6 +742,26 @@ namespace TrungTamTinHoc
             this.panel19.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            this.flowLayoutPanel4.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            this.panel17.ResumeLayout(false);
+            this.panel17.PerformLayout();
+            this.panel18.ResumeLayout(false);
+            this.panel18.PerformLayout();
+            this.panel20.ResumeLayout(false);
+            this.panel20.PerformLayout();
+            this.panel21.ResumeLayout(false);
+            this.panel21.PerformLayout();
+            this.panel22.ResumeLayout(false);
+            this.panel22.PerformLayout();
+            this.panel23.ResumeLayout(false);
+            this.panel23.PerformLayout();
+            this.panel26.ResumeLayout(false);
+            this.panel26.PerformLayout();
+            this.panel27.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -413,7 +769,6 @@ namespace TrungTamTinHoc
         #endregion
 
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Panel panel24;
@@ -442,5 +797,36 @@ namespace TrungTamTinHoc
         private System.Windows.Forms.DataGridView dtgv_nhapdiem;
         private System.Windows.Forms.Button bt_NhapDiem;
         private System.Windows.Forms.Button bt_Load;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel27;
+        private System.Windows.Forms.Button bt_MoLop;
+        private System.Windows.Forms.Button btn_CheckIDGV;
+        private System.Windows.Forms.Button btn_CheckIDLop;
+        private System.Windows.Forms.Panel panel26;
+        private System.Windows.Forms.ComboBox cb_LoaiMon;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.TextBox tb_IDLop;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.TextBox tb_TenLop;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.TextBox tb_IDMH;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Panel panel20;
+        private System.Windows.Forms.TextBox tb_IDGV;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.TextBox tb_HK;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.TextBox tb_NH;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Panel panel23;
+        private System.Windows.Forms.TextBox tb_SoLuongToiDa;
+        private System.Windows.Forms.Label label21;
     }
 }

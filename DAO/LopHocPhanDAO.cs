@@ -21,5 +21,11 @@ namespace DAO
             string query = "select * from LOPHOCPHAN where LOPHOCPHAN.ID_MonHoc = " + id_hp + " and HocKy = " + hocky + " and NamHoc = " + nam + "";
             return DataProvider.Instance.ExecuxeQuery(query);
         }
+
+        public int CheckIDLop(int id)
+        {
+            string query = "Select count (*) from LOPHOCPHAN where ID_Lop = "+id+";";
+            return Convert.ToInt32(DAO.DataProvider.Instance.ExecuteScalar(query));
+        }
     }
 }
