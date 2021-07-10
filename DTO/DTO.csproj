@@ -56,6 +56,8 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="GiaoVien.cs" />
+    <Compile Include="GiaoVien_ChuyenDe.cs" />
+    <Compile Include="GiaoVien_MonHoc.cs" />
     <Compile Include="HoaDon.cs" />
     <Compile Include="HocVien.cs" />
     <Compile Include="HocVien_DK_LopChuyenDe.cs" />

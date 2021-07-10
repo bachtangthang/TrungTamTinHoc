@@ -60,6 +60,14 @@ namespace TrungTamTinHoc
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.btn_KT_GVMH = new System.Windows.Forms.Button();
+            this.bt_MoLop = new System.Windows.Forms.Button();
+            this.btn_CheckIDGV = new System.Windows.Forms.Button();
+            this.btn_CheckIDLop = new System.Windows.Forms.Button();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.cb_LoaiMon = new System.Windows.Forms.ComboBox();
+            this.label22 = new System.Windows.Forms.Label();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.tb_IDLop = new System.Windows.Forms.TextBox();
@@ -82,13 +90,6 @@ namespace TrungTamTinHoc
             this.panel23 = new System.Windows.Forms.Panel();
             this.tb_SoLuongToiDa = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.cb_LoaiMon = new System.Windows.Forms.ComboBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.panel27 = new System.Windows.Forms.Panel();
-            this.bt_MoLop = new System.Windows.Forms.Button();
-            this.btn_CheckIDGV = new System.Windows.Forms.Button();
-            this.btn_CheckIDLop = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel24.SuspendLayout();
@@ -105,6 +106,8 @@ namespace TrungTamTinHoc
             this.panel1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.panel11.SuspendLayout();
+            this.panel27.SuspendLayout();
+            this.panel26.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel17.SuspendLayout();
@@ -113,8 +116,6 @@ namespace TrungTamTinHoc
             this.panel21.SuspendLayout();
             this.panel22.SuspendLayout();
             this.panel23.SuspendLayout();
-            this.panel26.SuspendLayout();
-            this.panel27.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -431,6 +432,91 @@ namespace TrungTamTinHoc
             this.panel11.Size = new System.Drawing.Size(923, 631);
             this.panel11.TabIndex = 0;
             // 
+            // panel27
+            // 
+            this.panel27.Controls.Add(this.btn_KT_GVMH);
+            this.panel27.Controls.Add(this.bt_MoLop);
+            this.panel27.Controls.Add(this.btn_CheckIDGV);
+            this.panel27.Controls.Add(this.btn_CheckIDLop);
+            this.panel27.Location = new System.Drawing.Point(667, 85);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(238, 517);
+            this.panel27.TabIndex = 25;
+            // 
+            // btn_KT_GVMH
+            // 
+            this.btn_KT_GVMH.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_KT_GVMH.Location = new System.Drawing.Point(36, 278);
+            this.btn_KT_GVMH.Name = "btn_KT_GVMH";
+            this.btn_KT_GVMH.Size = new System.Drawing.Size(176, 64);
+            this.btn_KT_GVMH.TabIndex = 22;
+            this.btn_KT_GVMH.Text = "Check GV_MH";
+            this.btn_KT_GVMH.UseVisualStyleBackColor = true;
+            this.btn_KT_GVMH.Click += new System.EventHandler(this.btn_KT_GVMH_Click);
+            // 
+            // bt_MoLop
+            // 
+            this.bt_MoLop.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_MoLop.Location = new System.Drawing.Point(36, 413);
+            this.bt_MoLop.Name = "bt_MoLop";
+            this.bt_MoLop.Size = new System.Drawing.Size(176, 64);
+            this.bt_MoLop.TabIndex = 21;
+            this.bt_MoLop.Text = "Mở lớp";
+            this.bt_MoLop.UseVisualStyleBackColor = true;
+            // 
+            // btn_CheckIDGV
+            // 
+            this.btn_CheckIDGV.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_CheckIDGV.Location = new System.Drawing.Point(36, 154);
+            this.btn_CheckIDGV.Name = "btn_CheckIDGV";
+            this.btn_CheckIDGV.Size = new System.Drawing.Size(176, 64);
+            this.btn_CheckIDGV.TabIndex = 20;
+            this.btn_CheckIDGV.Text = "Check ID GV";
+            this.btn_CheckIDGV.UseVisualStyleBackColor = true;
+            this.btn_CheckIDGV.Click += new System.EventHandler(this.btn_CheckIDGV_Click);
+            // 
+            // btn_CheckIDLop
+            // 
+            this.btn_CheckIDLop.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_CheckIDLop.Location = new System.Drawing.Point(36, 21);
+            this.btn_CheckIDLop.Name = "btn_CheckIDLop";
+            this.btn_CheckIDLop.Size = new System.Drawing.Size(176, 64);
+            this.btn_CheckIDLop.TabIndex = 19;
+            this.btn_CheckIDLop.Text = "Check ID lớp";
+            this.btn_CheckIDLop.UseVisualStyleBackColor = true;
+            this.btn_CheckIDLop.Click += new System.EventHandler(this.btn_CheckIDLop_Click);
+            // 
+            // panel26
+            // 
+            this.panel26.Controls.Add(this.cb_LoaiMon);
+            this.panel26.Controls.Add(this.label22);
+            this.panel26.Location = new System.Drawing.Point(667, 6);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(234, 66);
+            this.panel26.TabIndex = 24;
+            // 
+            // cb_LoaiMon
+            // 
+            this.cb_LoaiMon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_LoaiMon.FormattingEnabled = true;
+            this.cb_LoaiMon.Items.AddRange(new object[] {
+            "Chuyên đề",
+            "Học phần"});
+            this.cb_LoaiMon.Location = new System.Drawing.Point(84, 18);
+            this.cb_LoaiMon.Name = "cb_LoaiMon";
+            this.cb_LoaiMon.Size = new System.Drawing.Size(123, 28);
+            this.cb_LoaiMon.TabIndex = 4;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(3, 18);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(83, 33);
+            this.label22.TabIndex = 3;
+            this.label22.Text = "Loại:";
+            // 
             // flowLayoutPanel4
             // 
             this.flowLayoutPanel4.Controls.Add(this.panel12);
@@ -641,79 +727,6 @@ namespace TrungTamTinHoc
             this.label21.TabIndex = 3;
             this.label21.Text = "Số lượng:";
             // 
-            // panel26
-            // 
-            this.panel26.Controls.Add(this.cb_LoaiMon);
-            this.panel26.Controls.Add(this.label22);
-            this.panel26.Location = new System.Drawing.Point(667, 6);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(234, 66);
-            this.panel26.TabIndex = 24;
-            // 
-            // cb_LoaiMon
-            // 
-            this.cb_LoaiMon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_LoaiMon.FormattingEnabled = true;
-            this.cb_LoaiMon.Items.AddRange(new object[] {
-            "Chuyên đề",
-            "Học phần"});
-            this.cb_LoaiMon.Location = new System.Drawing.Point(84, 18);
-            this.cb_LoaiMon.Name = "cb_LoaiMon";
-            this.cb_LoaiMon.Size = new System.Drawing.Size(123, 28);
-            this.cb_LoaiMon.TabIndex = 4;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(3, 18);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(83, 33);
-            this.label22.TabIndex = 3;
-            this.label22.Text = "Loại:";
-            // 
-            // panel27
-            // 
-            this.panel27.Controls.Add(this.bt_MoLop);
-            this.panel27.Controls.Add(this.btn_CheckIDGV);
-            this.panel27.Controls.Add(this.btn_CheckIDLop);
-            this.panel27.Location = new System.Drawing.Point(667, 85);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(238, 385);
-            this.panel27.TabIndex = 25;
-            // 
-            // bt_MoLop
-            // 
-            this.bt_MoLop.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_MoLop.Location = new System.Drawing.Point(36, 292);
-            this.bt_MoLop.Name = "bt_MoLop";
-            this.bt_MoLop.Size = new System.Drawing.Size(176, 64);
-            this.bt_MoLop.TabIndex = 21;
-            this.bt_MoLop.Text = "Mở lớp";
-            this.bt_MoLop.UseVisualStyleBackColor = true;
-            // 
-            // btn_CheckIDGV
-            // 
-            this.btn_CheckIDGV.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_CheckIDGV.Location = new System.Drawing.Point(36, 154);
-            this.btn_CheckIDGV.Name = "btn_CheckIDGV";
-            this.btn_CheckIDGV.Size = new System.Drawing.Size(176, 64);
-            this.btn_CheckIDGV.TabIndex = 20;
-            this.btn_CheckIDGV.Text = "Check ID GV";
-            this.btn_CheckIDGV.UseVisualStyleBackColor = true;
-            this.btn_CheckIDGV.Click += new System.EventHandler(this.btn_CheckIDGV_Click);
-            // 
-            // btn_CheckIDLop
-            // 
-            this.btn_CheckIDLop.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_CheckIDLop.Location = new System.Drawing.Point(36, 21);
-            this.btn_CheckIDLop.Name = "btn_CheckIDLop";
-            this.btn_CheckIDLop.Size = new System.Drawing.Size(176, 64);
-            this.btn_CheckIDLop.TabIndex = 19;
-            this.btn_CheckIDLop.Text = "Check ID lớp";
-            this.btn_CheckIDLop.UseVisualStyleBackColor = true;
-            this.btn_CheckIDLop.Click += new System.EventHandler(this.btn_CheckIDLop_Click);
-            // 
             // fGiaoVu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -744,6 +757,9 @@ namespace TrungTamTinHoc
             this.panel1.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
+            this.panel27.ResumeLayout(false);
+            this.panel26.ResumeLayout(false);
+            this.panel26.PerformLayout();
             this.flowLayoutPanel4.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
@@ -759,9 +775,6 @@ namespace TrungTamTinHoc
             this.panel22.PerformLayout();
             this.panel23.ResumeLayout(false);
             this.panel23.PerformLayout();
-            this.panel26.ResumeLayout(false);
-            this.panel26.PerformLayout();
-            this.panel27.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -828,5 +841,6 @@ namespace TrungTamTinHoc
         private System.Windows.Forms.Panel panel23;
         private System.Windows.Forms.TextBox tb_SoLuongToiDa;
         private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Button btn_KT_GVMH;
     }
 }

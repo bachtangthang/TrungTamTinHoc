@@ -180,6 +180,72 @@ namespace TrungTamTinHoc
             }
         }
 
+        public int Check_GV_MH(int idGV, int idMH)//Kiểm tra giáo viên có thể dạy môn học không
+        {
+            try
+            {
+                return BUS.GiaoVien_MonHocBUS.Instance.Check_GV_MH(idGV, idMH);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return 0;
+            }
+        }
 
+        public int Check_GV_CD(int idGV, int idMH)//Kiểm tra giáo viên có thể dạy Chuyên đề không
+        {
+            try
+            {
+                return BUS.GiaoVien_ChuyenDeBUS.Instance.Check_GV_CD(idGV, idMH);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return 0;
+            }
+        }
+
+        private void btn_KT_GVMH_Click(object sender, EventArgs e)
+        {
+            if (cb_LoaiMon.Text == "Học phần")
+            {
+                try
+                {
+                    int val = Check_GV_MH(int.Parse(tb_IDGV.Text), int.Parse(tb_IDMH.Text));
+                    if (val >= 1)
+                    {
+                        MessageBox.Show("Giáo viên đủ điều kiện dạy môn học", "Thông báo");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Giáo viên không dủ điều kiện dạy môn học", "Thông báo");
+                    }
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else if(cb_LoaiMon.Text == "Chuyên đề")
+            {
+                try
+                {
+                    int val = Check_GV_CD(int.Parse(tb_IDGV.Text), int.Parse(tb_IDMH.Text));
+                    if (val >= 1)
+                    {
+                        MessageBox.Show("Giáo viên đủ điều kiện dạy môn học", "Thông báo");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Giáo viên không dủ điều kiện dạy môn học", "Thông báo");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }    
+        }
     }
 }
