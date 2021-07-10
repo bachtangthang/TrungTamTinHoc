@@ -101,6 +101,7 @@ namespace TrungTamTinHoc
             this.tb_MatKhau.Name = "tb_MatKhau";
             this.tb_MatKhau.Size = new System.Drawing.Size(250, 42);
             this.tb_MatKhau.TabIndex = 3;
+            this.tb_MatKhau.UseSystemPasswordChar = true;
             this.tb_MatKhau.TextChanged += new System.EventHandler(this.tb_MatKhau_TextChanged);
             // 
             // tb_TenDangNhap
