@@ -17,7 +17,7 @@ namespace DAO
 
         private HocVien_LichThiDAO() { }
 
-        public int DangKy(HocVien_LichThi hv)
+        public int DangKy(HocVien_LichThi hv)//Đăng ký thi lại
         {
             string query = "Insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK) values (" + hv.Id_hv + ", "+hv.Id_lt+ ", GETDATE())";
             return DataProvider.Instance.ExecuteNonQuery(query);

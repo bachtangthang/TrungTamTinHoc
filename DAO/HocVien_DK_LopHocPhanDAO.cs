@@ -78,7 +78,7 @@ namespace DAO
             return listHV;
         }
     
-        public int KTHV(int idhv, int idlop)
+        public int KTHV(int idhv, int idlop)//Kiểm tra học viên có đăng ký học phần hay không
         {
             string query = "select count (*) from HOCVIEN_DANGKY_LOPHOCPHAN where ID_HOCVIEN = " + idhv + " and ID_Lop = " + idlop + "; ";
             return Convert.ToInt32(DataProvider.Instance.ExecuteScalar(query));

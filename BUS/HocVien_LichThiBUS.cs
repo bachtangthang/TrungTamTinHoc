@@ -17,7 +17,7 @@ namespace BUS
 
         private HocVien_LichThiBUS() { }
         
-        public int DangKy(int id_hv, int id_lt)
+        public int DangKy(int id_hv, int id_lt)//Đăng ký thi lại
         {
             HocVien_LichThi hv = new HocVien_LichThi(id_hv, id_lt);
             return DAO.HocVien_LichThiDAO.Instance.DangKy(hv);

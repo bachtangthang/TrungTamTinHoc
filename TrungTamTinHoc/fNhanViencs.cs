@@ -192,7 +192,7 @@ namespace TrungTamTinHoc
             }
         }
 
-        private void bt_dangkythilai_Click(object sender, EventArgs e)
+        private void bt_dangkythilai_Click(object sender, EventArgs e)//Đăng ký thi lại
         {
             try
             {
