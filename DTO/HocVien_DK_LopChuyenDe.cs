@@ -18,7 +18,7 @@ namespace DTO
         public bool Is_Pass { get => is_Pass; set => is_Pass = value; }
         public int Diem { get => diem; set => diem = value; }
 
-        public HocVien_DK_LopChuyenDe(int hv, int lop, bool ispass, int diem)
+        public HocVien_DK_LopChuyenDe(int lop, int hv, bool ispass, int diem)
         {
             this.id_HV = hv;
             this.id_Lop = lop;
@@ -26,7 +26,7 @@ namespace DTO
             this.diem = diem;
         }
 
-        public HocVien_DK_LopChuyenDe(int hv, int lop)
+        public HocVien_DK_LopChuyenDe(int lop, int hv)
         {
             this.id_HV = hv;
             this.id_Lop = lop;
@@ -37,6 +37,13 @@ namespace DTO
             this.id_HV = hv;
             this.id_Lop = lop;
             this.diem = diem;
+        }
+
+        public HocVien_DK_LopChuyenDe(int lop, int hv, bool pass)
+        {
+            this.id_HV = hv;
+            this.id_Lop = lop;
+            this.is_Pass = pass;
         }
     }
 }

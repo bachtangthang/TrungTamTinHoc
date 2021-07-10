@@ -46,20 +46,45 @@ namespace DAO
         public List<HocVien_DK_LopChuyenDe> load(int id)//load danh sach SV de nhap diem
         {
             List<HocVien_DK_LopChuyenDe> listHV = new List<HocVien_DK_LopChuyenDe>();
-            string query = "Select  ID_HocVien, Diem from HOCVIEN_DANGKY_LOPCHUYENDE where ID_Lop = " + id + "";
+            string query = "Select  ID_HocVien, Diem, is_Pass from HOCVIEN_DANGKY_LOPCHUYENDE where ID_LopChuyenDe = " + id + "";
             DataTable data = DataProvider.Instance.ExecuxeQuery(query);
 
             foreach (DataRow item in data.Rows)
             {
                 int id_hv = Convert.ToInt32(item["ID_HocVien"]);
-                int diem = Convert.ToInt32(item["Diem"]);
-
-                HocVien_DK_LopChuyenDe newHV = new HocVien_DK_LopChuyenDe(id, id_hv, diem);
-
-                listHV.Add(newHV);
+                bool is_pass;
+                if (item["is_Pass"] is DBNull)
+                {
+                    is_pass = false;
+                }
+                else
+                {
+                    is_pass = (bool)item["is_Pass"];
+                }
+                if (!(item["Diem"] is DBNull))
+                {
+                    int diem = Convert.ToInt32(item["Diem"]);
+                    HocVien_DK_LopChuyenDe newHV = new HocVien_DK_LopChuyenDe(id, id_hv, is_pass, diem);
+                    listHV.Add(newHV);
+                }
+                else
+                {
+                    HocVien_DK_LopChuyenDe newHV = new HocVien_DK_LopChuyenDe(id, id_hv, is_pass);
+                    listHV.Add(newHV);
+                }
             }
 
             return listHV;
+        }
+
+        public bool NhapDiem(List<HocVien_DK_LopChuyenDe> listHV)
+        {
+            foreach (HocVien_DK_LopChuyenDe hv in listHV)
+            {
+                string query = "Update HOCVIEN_DANGKY_LOPCHUYENDE set is_Pass = '" + hv.Is_Pass + "' , Diem = " + hv.Diem + " where ID_HocVien = " + hv.Id_HV + " and ID_LopChuyenDe = " + hv.Id_Lop + "; ";
+                DAO.DataProvider.Instance.ExecuteNonQuery(query);
+            }
+            return true;
         }
     }
 }

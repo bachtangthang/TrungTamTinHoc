@@ -62,7 +62,21 @@ namespace TrungTamTinHoc
 
         private void bt_NhapDiem_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (cb_Loai.Text == "Học phần")
+                {
+                    BUS.HocVien_DK_LopHocPhanBUS.Instance.NhapDiem(dtgv_nhapdiem);
+                }
+                else if (cb_Loai.Text == "Chuyên đề")
+                {
+                    BUS.HocVien_DK_LopChuyenDeBUS.Instance.NhapDiem(dtgv_nhapdiem);
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

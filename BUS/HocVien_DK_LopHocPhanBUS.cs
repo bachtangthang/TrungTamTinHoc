@@ -38,5 +38,23 @@ namespace BUS
         {
             return DAO.HocVien_DK_LopHocPhanDAO.Instance.KTHV(idhv, idlop);
         }
+
+        public bool NhapDiem(DataGridView data)
+        {
+            List<HocVien_DK_LopHocPhan> listHV = new List<HocVien_DK_LopHocPhan>();
+            foreach (DataGridViewRow row in data.Rows)
+            {
+                int id_hv = Convert.ToInt32(row.Cells["Id_HV"].Value);
+                int id_lop = Convert.ToInt32(row.Cells["Id_Lop"].Value);
+                bool pass = (bool)row.Cells["is_Pass"].Value;
+                int diem = Convert.ToInt32(row.Cells["Diem"].Value);
+
+                HocVien_DK_LopHocPhan hv = new HocVien_DK_LopHocPhan(id_lop, id_hv, pass, diem);
+
+                listHV.Add(hv);
+            }
+
+            return DAO.HocVien_DK_LopHocPhanDAO.Instance.NhapDiem(listHV);
+        }
     }
 }

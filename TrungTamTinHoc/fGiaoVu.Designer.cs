@@ -83,7 +83,7 @@ namespace TrungTamTinHoc
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(947, 681);
+            this.tabControl1.Size = new System.Drawing.Size(937, 681);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -91,7 +91,7 @@ namespace TrungTamTinHoc
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(939, 652);
+            this.tabPage1.Size = new System.Drawing.Size(929, 652);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Mở lớp";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -265,7 +265,7 @@ namespace TrungTamTinHoc
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(939, 652);
+            this.tabPage3.Size = new System.Drawing.Size(929, 652);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Nhập điểm học viên";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -273,7 +273,7 @@ namespace TrungTamTinHoc
             // bt_Load
             // 
             this.bt_Load.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Load.Location = new System.Drawing.Point(719, 145);
+            this.bt_Load.Location = new System.Drawing.Point(703, 177);
             this.bt_Load.Name = "bt_Load";
             this.bt_Load.Size = new System.Drawing.Size(176, 74);
             this.bt_Load.TabIndex = 16;
@@ -284,7 +284,7 @@ namespace TrungTamTinHoc
             // bt_NhapDiem
             // 
             this.bt_NhapDiem.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_NhapDiem.Location = new System.Drawing.Point(719, 366);
+            this.bt_NhapDiem.Location = new System.Drawing.Point(703, 385);
             this.bt_NhapDiem.Name = "bt_NhapDiem";
             this.bt_NhapDiem.Size = new System.Drawing.Size(176, 74);
             this.bt_NhapDiem.TabIndex = 15;
@@ -297,7 +297,7 @@ namespace TrungTamTinHoc
             this.panel25.Controls.Add(this.dtgv_nhapdiem);
             this.panel25.Location = new System.Drawing.Point(9, 98);
             this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(691, 529);
+            this.panel25.Size = new System.Drawing.Size(656, 529);
             this.panel25.TabIndex = 14;
             // 
             // dtgv_nhapdiem
@@ -307,7 +307,7 @@ namespace TrungTamTinHoc
             this.dtgv_nhapdiem.Name = "dtgv_nhapdiem";
             this.dtgv_nhapdiem.RowHeadersWidth = 51;
             this.dtgv_nhapdiem.RowTemplate.Height = 24;
-            this.dtgv_nhapdiem.Size = new System.Drawing.Size(674, 523);
+            this.dtgv_nhapdiem.Size = new System.Drawing.Size(643, 523);
             this.dtgv_nhapdiem.TabIndex = 0;
             // 
             // flowLayoutPanel1
@@ -382,7 +382,7 @@ namespace TrungTamTinHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(929, 676);
+            this.ClientSize = new System.Drawing.Size(957, 696);
             this.Controls.Add(this.tabControl1);
             this.Name = "fGiaoVu";
             this.Text = "fGiaoVu";

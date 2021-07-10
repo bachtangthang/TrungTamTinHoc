@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using DTO;
 
 namespace DAO
@@ -46,17 +47,32 @@ namespace DAO
         public List<HocVien_DK_LopHocPhan> load(int id)//load danh sach SV de nhap diem
         {
             List<HocVien_DK_LopHocPhan> listHV = new List<HocVien_DK_LopHocPhan> ();
-            string query = "Select  ID_HocVien, Diem from HOCVIEN_DANGKY_LOPHOCPHAN where ID_Lop = " + id + "";
+            string query = "Select  ID_HocVien, Diem, is_Pass from HOCVIEN_DANGKY_LOPHOCPHAN where ID_Lop = " + id + "";
             DataTable data = DataProvider.Instance.ExecuxeQuery(query);
 
             foreach (DataRow item in data.Rows)
             {
                 int id_hv = Convert.ToInt32(item["ID_HocVien"]);
-                int diem = Convert.ToInt32(item["Diem"]);
-
-                HocVien_DK_LopHocPhan newHV = new HocVien_DK_LopHocPhan(id, id_hv, diem);
-
-                listHV.Add(newHV);
+                bool is_pass;
+                if (item["is_Pass"] is DBNull)
+                {
+                    is_pass = false;
+                }
+                else
+                {
+                    is_pass = (bool)item["is_Pass"];
+                }
+                if(!(item["Diem"] is DBNull))
+                {
+                    int diem = Convert.ToInt32(item["Diem"]);
+                    HocVien_DK_LopHocPhan newHV = new HocVien_DK_LopHocPhan(id, id_hv, is_pass,  diem);
+                    listHV.Add(newHV);
+                }                    
+                else
+                {
+                    HocVien_DK_LopHocPhan newHV = new HocVien_DK_LopHocPhan(id, id_hv, is_pass);
+                    listHV.Add(newHV);
+                }
             }    
 
             return listHV;
@@ -66,6 +82,16 @@ namespace DAO
         {
             string query = "select count (*) from HOCVIEN_DANGKY_LOPHOCPHAN where ID_HOCVIEN = " + idhv + " and ID_Lop = " + idlop + "; ";
             return Convert.ToInt32(DataProvider.Instance.ExecuteScalar(query));
+        }
+   
+        public bool NhapDiem(List<HocVien_DK_LopHocPhan> listHV)
+        {
+            foreach(HocVien_DK_LopHocPhan hv in listHV)
+            {
+                string query = "Update HOCVIEN_DANGKY_LOPHOCPHAN set is_Pass = '"+hv.Is_Pass+"' , Diem = "+hv.Diem+" where ID_HocVien = "+hv.Id_HV+" and ID_Lop = "+hv.Id_Lop+"; ";
+                DAO.DataProvider.Instance.ExecuteNonQuery(query);
+            }
+            return true;
         }
     }
 }
