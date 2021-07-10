@@ -38,7 +38,7 @@ create table LICHTHI
 (
 	ID_LichThi int,
 	PhongThi nvarchar(6),
-	ThoiGian nvarchar(4),
+	ThoiGian nvarchar(5),
 	ID_LopHocPhan int,
 	Ngay date,
 	primary key(ID_LichThi)
