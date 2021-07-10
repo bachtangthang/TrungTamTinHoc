@@ -42,5 +42,11 @@ namespace DAO
             string query = "select * from LOPCHUYENDE ";
             return DAO.DataProvider.Instance.ExecuxeQuery(query);
         }
+
+        public int MoLop(LopChuyenDe lcd)
+        {
+            string query = "insert into LOPCHUYENDE values (" + lcd.Id_LopChuyenDe + ", '" + lcd.TenLop + "', " + lcd.Id_ChuyenDeMo + ", " + lcd.Id_GiaoVien + ", " + lcd.HocKy + ", " + lcd.Nam + ", "+lcd.Soluong+", "+lcd.Soluongtoida+");";
+            return DAO.DataProvider.Instance.ExecuteNonQuery(query);
+        }
     }
 }
