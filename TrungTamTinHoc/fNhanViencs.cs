@@ -101,7 +101,7 @@ namespace TrungTamTinHoc
             {
                 BUS.HocVien_DK_LopHocPhanBUS.Instance.LoadLop(dtgv_Lop, int.Parse(tb_Idlop.Text));
 
-                tb_HocPhi.Text = BUS.MonHocBUS.Instance.HocPhi(int.Parse(tb_Idlop.Text)).ToString();
+                tb_HocPhi.Text = BUS.MonHocBUS.Instance.HocPhi(int.Parse(tb_Idlop.Text)).ToString();//Lấy học phí theo ID lớp
             }
             catch (Exception ex)
             {
