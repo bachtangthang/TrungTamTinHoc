@@ -26,13 +26,15 @@ namespace TrungTamTinHoc
                 string tenlop = tb_tenMH.Text;
                 if (cb_LoaiLop.Text == "Học phần")
                 {
-                    int id_mh = BUS.MonHocBUS.Instance.findID_by_Name(tenlop);
-                    dtgv_lophoc.DataSource = BUS.LopHocPhanBUS.Instance.timLop(id_mh, hocky, nam);
+                    //int id_mh = BUS.MonHocBUS.Instance.findID_by_Name(tenlop);
+                    //dtgv_lophoc.DataSource = BUS.LopHocPhanBUS.Instance.timLop(id_mh, hocky, nam);
+                    dtgv_lophoc.DataSource = BUS.LopHocPhanBUS.Instance.timLopV2(tenlop, hocky, nam);
                 }
                 else if (cb_LoaiLop.Text == "Chuyên đề")
                 {
-                    int id_cd = BUS.ChuyenDeBUS.Instance.findID_by_Name(tenlop);
-                    dtgv_lophoc.DataSource = BUS.LopChuyenDeBUS.Instance.timLop(id_cd, hocky, nam);
+                    //int id_cd = BUS.ChuyenDeBUS.Instance.findID_by_Name(tenlop);
+                    //dtgv_lophoc.DataSource = BUS.LopChuyenDeBUS.Instance.timLop(id_cd, hocky, nam);
+                    dtgv_lophoc.DataSource = BUS.LopChuyenDeBUS.Instance.timLopV2(tenlop, hocky, nam);
                 }
             }
             catch (Exception ex)

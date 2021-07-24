@@ -20,7 +20,7 @@ namespace BUS
 
         public int DangKy(int id_HV, int id_Lop)
         {
-            HocVien_DK_LopChuyenDe dk = new HocVien_DK_LopChuyenDe(id_HV, id_Lop);
+            HocVien_DK_LopChuyenDe dk = new HocVien_DK_LopChuyenDe(id_Lop, id_HV);
             return DAO.HocVien_DK_LopChuyenDeDAO.Instance.dangky(dk);
         }
 

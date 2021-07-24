@@ -1,0 +1,16 @@
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\bin\Release\BUS.exe.config
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\bin\Release\BUS.exe
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\bin\Release\BUS.pdb
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\bin\Release\DAO.exe
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\bin\Release\DTO.exe
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\bin\Release\DAO.pdb
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\bin\Release\DAO.exe.config
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\bin\Release\DTO.pdb
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\bin\Release\DTO.exe.config
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\obj\Release\BUS.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\obj\Release\BUS.Properties.Resources.resources
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\obj\Release\BUS.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\obj\Release\BUS.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\obj\Release\BUS.csproj.CopyComplete
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\obj\Release\BUS.exe
+C:\Users\DELL\Desktop\TrungTamTinHoc\BUS\obj\Release\BUS.pdb

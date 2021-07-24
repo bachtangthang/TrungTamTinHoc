@@ -18,7 +18,8 @@ namespace DAO
             private set { DataProvider.instance = value; }
         }
 
-        private string connectionSTR = @"Data Source=DESKTOP-QC3TBIE\SQLEXPRESS;Initial Catalog=TTTinHoc;Integrated Security=True";
+        private string connectionSTR = @"Data Source=DESKTOP-QC3TBIE\SQLEXPRESS;Initial Catalog=TrungTamTinHoc;Integrated Security=True";
+        //databse cũ Data Source=DESKTOP-QC3TBIE\SQLEXPRESS;Initial Catalog=TTTinHoc;Integrated Security=True
 
         public DataTable ExecuxeQuery(string query, object[] parameter = null)
         {

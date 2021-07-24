@@ -1,0 +1,13 @@
+C:\Users\DELL\Desktop\TrungTamTinHoc\DAO\bin\Release\DAO.exe.config
+C:\Users\DELL\Desktop\TrungTamTinHoc\DAO\bin\Release\DAO.exe
+C:\Users\DELL\Desktop\TrungTamTinHoc\DAO\bin\Release\DAO.pdb
+C:\Users\DELL\Desktop\TrungTamTinHoc\DAO\bin\Release\DTO.exe
+C:\Users\DELL\Desktop\TrungTamTinHoc\DAO\bin\Release\DTO.pdb
+C:\Users\DELL\Desktop\TrungTamTinHoc\DAO\bin\Release\DTO.exe.config
+C:\Users\DELL\Desktop\TrungTamTinHoc\DAO\obj\Release\DAO.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\TrungTamTinHoc\DAO\obj\Release\DAO.Properties.Resources.resources
+C:\Users\DELL\Desktop\TrungTamTinHoc\DAO\obj\Release\DAO.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\TrungTamTinHoc\DAO\obj\Release\DAO.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\TrungTamTinHoc\DAO\obj\Release\DAO.csproj.CopyComplete
+C:\Users\DELL\Desktop\TrungTamTinHoc\DAO\obj\Release\DAO.exe
+C:\Users\DELL\Desktop\TrungTamTinHoc\DAO\obj\Release\DAO.pdb

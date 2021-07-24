@@ -48,5 +48,11 @@ namespace DAO
             string query = "insert into LOPCHUYENDE values (" + lcd.Id_LopChuyenDe + ", '" + lcd.TenLop + "', " + lcd.Id_ChuyenDeMo + ", " + lcd.Id_GiaoVien + ", " + lcd.HocKy + ", " + lcd.Nam + ", "+lcd.Soluong+", "+lcd.Soluongtoida+");";
             return DAO.DataProvider.Instance.ExecuteNonQuery(query);
         }
+
+        public DataTable timLopV2(string mh, int hocky, int nam)
+        {
+            string query = "select * from LOPCHUYENDE lcd, CHUYENDE cd where lcd.ID_ChuyenDeMo = cd.ID_ChuyenDe and cd.TenChuyenDe like '%" + mh + "%' and lcd.HocKy = " + hocky + " and lcd.NamHoc = " + nam + "";
+            return DataProvider.Instance.ExecuxeQuery(query);
+        }
     }
 }

@@ -159,3 +159,4 @@ AS
 				PRINT('INVALID INFOR INSERTED!')
 				ROLLBACK TRANSACTION
 			END
+drop trigger trg_KiemTraIDLichThi

@@ -43,5 +43,10 @@ namespace BUS
             LopChuyenDe lcd = new LopChuyenDe(idlop, tenlop, idmon, idgv, hocky, namhoc, soluong);
             return DAO.LopChuyenDeDAO.Instance.MoLop(lcd);
         }
+
+        public DataTable timLopV2(string mh, int hocky, int nam)
+        {
+            return LopChuyenDeDAO.Instance.timLopV2(mh, hocky, nam);
+        }
     }
 }

@@ -80,13 +80,16 @@ namespace TrungTamTinHoc
                 string tenlop = tb_tenMH.Text;
                 if (cb_LoaiLop.Text == "Học phần")//test data: Bryn Caldicot, hk 1 nam 2020
                 {
-                    int id_mh = BUS.MonHocBUS.Instance.findID_by_Name(tenlop);
-                    dtgv_lophoc.DataSource = BUS.LopHocPhanBUS.Instance.timLop(id_mh, hocky, nam);
+                    //int id_mh = BUS.MonHocBUS.Instance.findID_by_Name(tenlop);
+                    //dtgv_lophoc.DataSource = BUS.LopHocPhanBUS.Instance.timLop(id_mh, hocky, nam);
+
+                    dtgv_lophoc.DataSource = BUS.LopHocPhanBUS.Instance.timLopV2(tenlop, hocky, nam);
                 }
                 else if (cb_LoaiLop.Text == "Chuyên đề")
                 {
-                    int id_cd = BUS.ChuyenDeBUS.Instance.findID_by_Name(tenlop);
-                    dtgv_lophoc.DataSource = BUS.LopChuyenDeBUS.Instance.timLop(id_cd, hocky, nam);
+                    //int id_cd = BUS.ChuyenDeBUS.Instance.findID_by_Name(tenlop);
+                    //dtgv_lophoc.DataSource = BUS.LopChuyenDeBUS.Instance.timLop(id_cd, hocky, nam);
+                    dtgv_lophoc.DataSource = BUS.LopChuyenDeBUS.Instance.timLopV2(tenlop, hocky, nam);
                 }
             }
             catch(Exception ex)
@@ -114,7 +117,7 @@ namespace TrungTamTinHoc
             try
             {
                 int i = BUS.HocVien_DK_LopHocPhanBUS.Instance.DangKy(int.Parse(tb_IDHV.Text), int.Parse(tb_Idlop.Text));//Thêm vào bảng HocVien_DK_LopHocPhan
-                if (i == 1)
+                if (i >= 1)
                     MessageBox.Show("Đăng ký thành công", "Thông báo");
                 else
                     MessageBox.Show("Đăng ký không thành công", "Thông báo");
@@ -163,7 +166,7 @@ namespace TrungTamTinHoc
             try
             {
                 int i = BUS.HocVien_DK_LopChuyenDeBUS.Instance.DangKy(int.Parse(tb_idhv_dkcd.Text), int.Parse(tb_idlop_dkcd.Text));//Thêm vào bảng HocVien_DK_LopChuyenDe
-                if (i == 1)
+                if (i >= 1)
                     MessageBox.Show("Đăng ký thành công", "Thông báo");
                 else
                     MessageBox.Show("Đăng ký không thành công", "Thông báo");
@@ -188,7 +191,7 @@ namespace TrungTamTinHoc
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Học viên đã đăng ký môn học");
+                MessageBox.Show(ex.Message);
             }
         }
 

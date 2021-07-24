@@ -476,7 +476,6 @@ insert into LOPCHUYENDE (ID_LopChuyenDe, TenLop, ID_ChuyenDeMo, ID_GiaoVien, Hoc
 insert into LOPCHUYENDE (ID_LopChuyenDe, TenLop, ID_ChuyenDeMo, ID_GiaoVien, HocKy, NamHoc) values (10, 'Maybelle Attrey', 10, 18, 1, 2020);
 insert into LOPCHUYENDE (ID_LopChuyenDe, TenLop, ID_ChuyenDeMo, ID_GiaoVien, HocKy, NamHoc) values (11, 'Kacy Moxted', 1, 17, 2, 2021);
 insert into LOPCHUYENDE (ID_LopChuyenDe, TenLop, ID_ChuyenDeMo, ID_GiaoVien, HocKy, NamHoc) values (12, 'Hedwiga Stonebridge', 5, 12, 2, 2020);
-insert into LOPCHUYENDE (ID_LopChuyenDe, TenLop, ID_ChuyenDeMo, ID_GiaoVien, HocKy, NamHoc) values (13, 'Brigitta Crole', 13, 4, 1, 2021);
 insert into LOPCHUYENDE (ID_LopChuyenDe, TenLop, ID_ChuyenDeMo, ID_GiaoVien, HocKy, NamHoc) values (14, 'Camilla Wayland', 4, 15, 2, 2020);
 insert into LOPCHUYENDE (ID_LopChuyenDe, TenLop, ID_ChuyenDeMo, ID_GiaoVien, HocKy, NamHoc) values (15, 'Gabi Hischke', 3, 19, 2, 2020);
 
@@ -571,7 +570,6 @@ insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values
 insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (23, 14, 2.5);
 insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (47, 10, 5.4);
 insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (24, 7, 4.9);
-insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (57, 13, 8.7);
 insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (33, 8, 8.7);
 insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (31, 7, 6.8);
 insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (25, 10, 2.0);
@@ -616,7 +614,6 @@ insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values
 insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (30, 14, 1.5);
 insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (12, 6, 9.7);
 insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (46, 8, 5.6);
-insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (11, 13, 6.3);
 insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (34, 15, 4.8);
 insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (10, 10, 9.4);
 insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (17, 9, 1.1);
@@ -641,11 +638,9 @@ insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values
 insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (22, 10, 8.9);
 insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (27, 15, 4.3);
 insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (33, 14, 1.1);
-insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (10, 13, 5.3);
 insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (26, 4, 2.7);
 insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (30, 14, 8.6);
 insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (9, 4, 8.4);
-insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (21, 13, 8.0);
 insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (49, 8, 1.8);
 insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (16, 9, 6.9);
 insert into HOCVIEN_DANGKY_LOPCHUYENDE (ID_HocVien, ID_LopChuyenDe, Diem) values (48, 7, 6.2);
@@ -1031,7 +1026,7 @@ begin
 	begin
 		set @id = @id +1
 		set @idnguoithuchien = (select top 1 ID_NhanVien from NHANVIEN order by newid())
-		insert into HOADON values (@id, @idnguoithuchien, @idhocvien)
+		insert into HOADON(ID_HoaDon, NguoiThucHien, ID_HocVien) values (@id, @idnguoithuchien, @idhocvien)
 		fetch next from @cur
 		into @idhocvien
 	end
@@ -1040,3 +1035,179 @@ begin
 end
 
 exec genHoaDon
+
+
+create procedure genHocVienLichThi
+as
+	declare @cur cursor
+	declare @idhocvien int
+	declare @idlichthi int
+	declare @idlop int
+	declare @idnguoithuchien int
+	declare @diem int
+begin
+	set @cur = CURSOR for 
+		(select ID_HocVien, ID_Lop, Diem from HOCVIEN_DANGKY_LOPHOCPHAN)
+		open @cur
+		fetch next from @cur
+		into @idhocvien,@idlop, @diem
+	while @@FETCH_STATUS = 0
+	begin
+		set @idlichthi = (select Top 1 ID_LichThi from LICHThi where ID_LopHocPhan = @idlop order by newid())
+		insert into HOCVIEN_LICHTHI(ID_HOCVIEN, ID_LICHTHI, diem) values (@idhocvien, @idlichthi, @diem)
+		fetch next from @cur
+		into @idhocvien, @idlop, @diem
+	end
+	close @cur
+	deallocate @cur
+end
+go
+
+exec genHocVienLichThi;
+
+insert into GIAOVIEN_CHUYENDE (ID_GiaoVien, ID_ChuyenDe) values (10 , 1);
+insert into GIAOVIEN_CHUYENDE (ID_GiaoVien, ID_ChuyenDe) values (12 , 2);
+insert into GIAOVIEN_CHUYENDE (ID_GiaoVien, ID_ChuyenDe) values (7, 3);
+insert into GIAOVIEN_CHUYENDE (ID_GiaoVien, ID_ChuyenDe) values (8 , 4);
+insert into GIAOVIEN_CHUYENDE (ID_GiaoVien, ID_ChuyenDe) values (13, 5);
+insert into GIAOVIEN_CHUYENDE (ID_GiaoVien, ID_ChuyenDe) values (3 , 6);
+insert into GIAOVIEN_CHUYENDE (ID_GiaoVien, ID_ChuyenDe) values (2 , 7);
+insert into GIAOVIEN_CHUYENDE (ID_GiaoVien, ID_ChuyenDe) values (17 , 8);
+insert into GIAOVIEN_CHUYENDE (ID_GiaoVien, ID_ChuyenDe) values (17 , 9);
+insert into GIAOVIEN_CHUYENDE (ID_GiaoVien, ID_ChuyenDe) values (18, 10);
+insert into GIAOVIEN_CHUYENDE (ID_GiaoVien, ID_ChuyenDe) values (17 , 1);
+insert into GIAOVIEN_CHUYENDE (ID_GiaoVien, ID_ChuyenDe) values (12 , 5);
+insert into GIAOVIEN_CHUYENDE (ID_GiaoVien, ID_ChuyenDe) values (19 , 3);
+
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 36, 7, GETDATE(), 4)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 47, 7, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 56, 7, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 65, 7, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 77, 7, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 84, 7, GETDATE(), NULL)
+
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 26, 21, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 28, 21, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 29, 21, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 67, 21, GETDATE(), NULL)
+
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 5, 30, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 13, 30, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 38, 30, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 40, 30, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 59, 30, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 70, 30, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 81, 30, GETDATE(), NULL)
+
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 24, 23, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 25, 23, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 38, 23, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 40, 23, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 72, 23, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 74, 23, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 76, 23, GETDATE(), NULL)
+
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 4, 22, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 26, 22, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 33, 22, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 61, 22, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 79, 22, GETDATE(), NULL)
+
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values (5, 19, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 54, 19, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 60, 19, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 62, 19, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 67, 19, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 95, 19, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 79, 19, GETDATE(), NULL)
+
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 4, 28, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 16, 28, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 33, 28, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 38, 28, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 50, 28, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 59, 28, GETDATE(), NULL)
+
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 10, 20, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 29, 20, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 34, 20, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 35, 20, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 42, 20, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 44, 27, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 48, 27, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 57, 27, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 90, 27, GETDATE(), NULL)
+insert into HOCVIEN_LICHTHI (ID_HocVien, ID_LichThi, ngayDK, diem) values ( 96, 27, GETDATE(), NULL);
+
+-- Chi Tiet Hóa đơn va gen bang hoa don lien quan
+create procedure genCTHoaDon
+as
+	declare @cur cursor
+	declare @idhocvien int
+	declare @idlop int
+	declare @id int
+	declare @idnguoithuchien int
+	declare @tien float
+	declare @monhoc int
+begin
+	set @cur = CURSOR for 
+		(select ID_HocVien, ID_Lop from HOCVIEN_DANGKY_LOPHOCPHAN)
+		open @cur
+		fetch next from @cur
+		into @idhocvien, @idlop
+	set @id = 0
+	while @@FETCH_STATUS = 0
+	begin
+		set @id = @id +1
+		set @idnguoithuchien = (select top 1 ID_NhanVien from NHANVIEN order by newid())
+		set @tien = (select mh.HOCPHI from LOPHOCPHAN lhp, MONHOC mh where @idlop = lhp.ID_Lop and lhp.ID_MonHoc = mh.ID_MonHoc)
+		set @monhoc = (select lhp.ID_MonHoc from LOPHOCPHAN lhp where @idlop = lhp.ID_Lop)
+		insert into HOADON(ID_HoaDon, NguoiThucHien, ID_HocVien, TongTien) values (@id, @idnguoithuchien, @idhocvien, @tien)
+		insert into CHITIETHOADON(ID_HD, ID_MonHoc, GiaTien) values (@id, @monhoc, @tien)
+		fetch next from @cur
+		into @idhocvien, @idlop
+	end
+	close @cur
+	deallocate @cur
+end
+
+
+--drop proc genCTHoaDon;
+
+exec genCTHoaDon;
+
+--Gen CTHD CHuyenDe va Hoa DOn lien quan
+create procedure genCTHoaDonChuyenDe
+as
+	declare @cur cursor
+	declare @idhocvien int
+	declare @idlop int
+	declare @id int
+	declare @idnguoithuchien int
+	declare @tien float
+	declare @chuyende int
+begin
+	set @cur = CURSOR for 
+		(select ID_HocVien, ID_LopChuyenDe from HOCVIEN_DANGKY_LOPCHUYENDE)
+		open @cur
+		fetch next from @cur
+		into @idhocvien, @idlop
+	set @id = (select top 1 ID_HOADON from HOADON order by ID_HoaDon desc)
+	while @@FETCH_STATUS = 0
+	begin
+		set @id = @id +1
+		set @idnguoithuchien = (select top 1 ID_NhanVien from NHANVIEN order by newid())
+		set @tien = (select cd.GIATIEN from LOPCHUYENDE lcd, CHUYENDE cd where @idlop = lcd.ID_LopChuyenDe and lcd.ID_ChuyenDeMo = cd.ID_ChuyenDe)
+		set @chuyende = (select lcd.ID_ChuyenDeMo from LOPCHUYENDE lcd where @idlop = lcd.ID_LopChuyenDe)
+		insert into HOADON(ID_HoaDon, NguoiThucHien, ID_HocVien, TongTien) values (@id, @idnguoithuchien, @idhocvien, @tien)
+		insert into CHITIETHOADONCHUYENDE(ID_HD, ID_ChuyenDe, GiaTien) values (@id, @chuyende, @tien)
+		fetch next from @cur
+		into @idhocvien, @idlop
+	end
+	close @cur
+	deallocate @cur
+end
+
+--drop proc genCTHoaDonChuyenDe;
+
+exec genCTHoaDonChuyenDe;

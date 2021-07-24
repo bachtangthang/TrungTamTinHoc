@@ -43,5 +43,10 @@ namespace BUS
             LopHocPhan lhp = new LopHocPhan(idlop, tenlop, idmon, idgv, hocky, namhoc, soluong);
             return DAO.LopHocPhanDAO.Instance.MoLop(lhp);
         }
+
+        public DataTable timLopV2(string mh, int hocky, int nam)
+        {
+            return LopHocPhanDAO.Instance.timLopV2(mh, hocky, nam);
+        }
     }
 }

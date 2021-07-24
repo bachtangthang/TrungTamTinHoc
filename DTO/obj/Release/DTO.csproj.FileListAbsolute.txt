@@ -1,0 +1,9 @@
+C:\Users\DELL\Desktop\TrungTamTinHoc\DTO\bin\Release\DTO.exe.config
+C:\Users\DELL\Desktop\TrungTamTinHoc\DTO\bin\Release\DTO.exe
+C:\Users\DELL\Desktop\TrungTamTinHoc\DTO\bin\Release\DTO.pdb
+C:\Users\DELL\Desktop\TrungTamTinHoc\DTO\obj\Release\DTO.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\TrungTamTinHoc\DTO\obj\Release\DTO.Properties.Resources.resources
+C:\Users\DELL\Desktop\TrungTamTinHoc\DTO\obj\Release\DTO.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\TrungTamTinHoc\DTO\obj\Release\DTO.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\TrungTamTinHoc\DTO\obj\Release\DTO.exe
+C:\Users\DELL\Desktop\TrungTamTinHoc\DTO\obj\Release\DTO.pdb

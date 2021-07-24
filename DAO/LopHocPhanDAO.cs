@@ -44,5 +44,11 @@ namespace DAO
             string query = "insert into LOPHOCPHAN values (" + lhp.Id_Lop + ", " + lhp.Soluong + ", " + lhp.Soluongtoida + ", '" + lhp.TenLop + "', " + lhp.Id_MH + ", " + lhp.Id_GV + ", " + lhp.Hocky + ", " + lhp.Nam + ");";
             return DAO.DataProvider.Instance.ExecuteNonQuery(query);
         }
+
+        public DataTable timLopV2(string mh, int hocky, int nam)
+        {
+            string query = "select * from LOPHOCPHAN lhp, MONHOC mh where lhp.ID_MonHoc = mh.ID_MonHoc and mh.ten like '%" + mh + "%' and lhp.HocKy = " + hocky + " and lhp.NamHoc = " + nam + "";
+            return DataProvider.Instance.ExecuxeQuery(query);
+        }
     }
 }

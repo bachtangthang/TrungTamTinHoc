@@ -1,6 +1,6 @@
-Create database TTTinHoc
+Create database TrungTamTinHoc
 go
-use TTTinHoc
+use TrungTamTinHoc
 go
 -----------------------------------------------------------
 -----------------------------------------------------------
@@ -37,7 +37,7 @@ create table CHUYENDE
 create table LICHTHI
 (
 	ID_LichThi int,
-	PhongThi nvarchar(6),
+	PhongThi nvarchar(20),
 	ThoiGian nvarchar(5),
 	ID_LopHocPhan int,
 	Ngay date,
